@@ -1,0 +1,852 @@
+key,en,es,ar
+Installation,Installation,Instalación,تثبيت
+Project Installation Process is,Project Installation Process is,El proceso de instalación del proyecto es,عملية تثبيت المشروع هي
+Payment Watting,Payment Watting,Mataje de pago,الدفع
+canceled,Canceled,Cancelado,ألغيت
+Failed!,Failed!,¡Fallido!,فشل!
+Project Installation Server,Project Installation Server,Servidor de instalación del proyecto,خادم تثبيت المشروع
+Requirements,Requirements,Requisitos,متطلبات
+Back,Back,Atrás,خلف
+Buyer Username/Email,Buyer Username/Email,Nombre de usuario/correo electrónico del comprador,اسم مستخدم المشتري/البريد الإلكتروني
+Payment Methods,Payment Methods,Métodos de pago,طرق الدفع
+Seller Username/Email,Seller Username/Email,Nombre de usuario/correo electrónico del vendedor,اسم مستخدم البائع/البريد الإلكتروني
+Me,Me,A mí,أنا
+Are you sure to logout?,Are you sure to logout?,¿Estás seguro de cerrar sesión?,هل أنت متأكد من تسجيل الخروج؟
+Next,Next,Próximo,التالي
+Welcome,Welcome,Bienvenido,مرحباً
+To Project Installation Process,To Project Installation Process,Al proceso de instalación del proyecto,لعملية تثبيت المشروع
+"To continue with the installation process click on the start button. if you choose not to install this application, click on the cancel button. Thanks","To continue with the installation process click on the start button. if you choose not to install this application, click on the cancel button. Thanks","Para continuar con el proceso de instalación, haga clic en el botón Inicio. Si elige no instalar esta aplicación, haga clic en el botón Cancelar. Gracias","للمتابعة مع عملية التثبيت ، انقر على زر البدء. إذا اخترت عدم تثبيت هذا التطبيق ، فانقر فوق الزر ""إلغاء"". شكرًا"
+Cancel,Cancel,Cancelar,يلغي
+Start,Start,Comenzar,يبدأ
+Admin | Login,Admin | Login,Administrador | Acceso,المسؤول | تسجيل الدخول
+sub-title,sub-title,subtitular,العنوان الفرعي
+Password ,Password ,Contraseña,كلمة المرور
+Reset,Reset,Reiniciar,إعادة ضبط
+Enter your account email address or username,Enter your account email address or username,Ingrese la dirección de correo electrónico o nombre de usuario de su cuenta,أدخل عنوان بريدك الإلكتروني أو اسم المستخدم
+Username OR Email Address,Username OR Email Address,Nombre de usuario o dirección de correo electrónico,اسم المستخدم أو البريد الالكتروني
+Send,Send,Enviar,يرسل
+sub-title mt-0,sub-title mt-1,subtitle MT-1,الفرعية العنوان MT-1
+Reset ,Reset ,Reiniciar,إعادة ضبط
+Password,Password,Contraseña,كلمة المرور
+New Password,New Password,Nueva contraseña,كلمة المرور الجديدة
+Confirm Password,Confirm Password,confirmar Contraseña,تأكيد كلمة المرور
+text--base,text--base,Texto-Base,نص-قاعدة
+Login,Login,Acceso,تسجيل الدخول
+Reset Password,Reset Password,Restablecer la contraseña,إعادة تعيين كلمة المرور
+Welcome To,Welcome To,Bienvenido a,مرحبا بك في
+Admin Panel,Admin Panel,Panel de administrador,لوحة الادارة
+Email Address,Email Address,Dirección de correo electrónico,عنوان البريد الإلكتروني
+No data found!,No data found!,¡Datos no encontrados!,لاتوجد بيانات!
+Transactions & Logs,Transactions & Logs,Transacciones y registros,المعاملات والسجلات
+Default,Default,Por defecto,تقصير
+Sender,Sender,Remitente,مرسل
+Receiver,Receiver,Receptor,المتلقي
+modal-title,modal-title,modal,طبقة مشروطة
+Add Language,Add Language,Agregar lenguaje,إضافة لغة
+button,button,botón,زر
+Add,Add,Agregar,يضيف
+Edit Language,Edit Language,Editar lenguaje,تحرير اللغة
+Update,Update,Actualizar,تحديث
+Add Item,Add Item,Añadir artículo,اضافة عنصر
+Add Blog,Add Blog,Agregar blog,أضف مدونة
+Add Solution,Add Solution,Agregar solución,أضف الحل
+Add Page,Add Page,Añadir página,إضافة صفحة
+Add Admin,Add Admin,Agregar administrador,إضافة المسؤول
+Date,Date,Fecha,تاريخ
+countryFlag,countryFlag,Bandera del país,علم الدولة
+Image,Image,Imagen,صورة
+Admin Profile Image,Admin Profile Image,Imagen de perfil de administración,صورة ملف تعريف المسؤول
+Add Currency,Add Currency,Agregar moneda,أضف العملة
+Country Flag,Country Flag,Bandera del país,علم الدولة
+Add Escrow Category,Add Escrow Category,Agregar categoría de depósito en garantía,أضف فئة الضمان
+Add New Screen,Add New Screen,Agregar nueva pantalla,أضف شاشة جديدة
+Add New Permission,Add New Permission,Agregar nuevo permiso,أضف إذنًا جديدًا
+selectRole,selectRole,selectrolo,SelectRole
+Assign Permission Page/Task,Assign Permission Page/Task,Asignar la página/tarea de permiso,تعيين صفحة/مهمة إذن
+Edit Permission,Edit Permission,Editar permiso,تحرير إذن
+Add New Role,Add New Role,Agregar un nuevo rol,أضف دورًا جديدًا
+Edit Role,Edit Role,Rol de edición,تحرير الدور
+Add New Category,Add New Category,Añadir nueva categoria,إضافة فئة جديدة
+Escrow Overview,Escrow Overview,Descripción general del depósito,نظرة عامة على الضمان
+Edit Admin,Edit Admin,Editar administrador,تحرير المسؤول
+Edit Category,Edit Category,Editar categoria,تحرير الفئة
+Edit Currency,Edit Currency,Editar moneda,تحرير العملة
+Edit Escrow Category,Edit Escrow Category,Editar categoría de depósito en garantía,تحرير فئة الضمان
+Edit Screen,Edit Screen,Pantalla de edición,تحرير الشاشة
+Update Extension,Update Extension,Extensión de actualización,تمديد تحديث
+extension-name,extension-name,nombre de extensión,اسم التمديد
+Rejejct KYC ,Rejejct KYC ,REJEJCT KYC,Rejejct KYC
+Submit,Submit,Entregar,يُقدِّم
+Send Email,Send Email,Enviar correo electrónico,ارسل بريد الكتروني
+Close,Close,Cerca,يغلق
+Send Test Mail,Send Test Mail,Enviar correo de prueba,إرسال بريد الاختبار
+Global Setting for,Global Setting for,Escenario global para,الإعداد العالمي ل
+in bellow,in bellow,a la derecha,في دار العالي
+Amount Limit,Amount Limit,Límite de cantidad,حد المبلغ
+Charge,Charge,Cargar,تكلفة
+Rate,Rate,Tasa,معدل
+Total Supported Currency,Total Supported Currency,Moneda total compatible,إجمالي العملة المدعومة
+Collect Data,Collect Data,Recolectar datos,اجمع بيانات
+fas fa-plus,fas fa-plus,fas fa-plus,fas fa plus
+Field Types*,Field Types*,Tipos de campo*,أنواع الحقول*
+"This ticket is solved, you can","This ticket is solved, you can","Este boleto está resuelto, puedes",تم حل هذه التذكرة ، يمكنك
+Pending Tickets,Pending Tickets,Boletos pendientes,تذاكر معلقة
+View All,View All,Ver todo,عرض الكل
+paymentWaiting,Payment Waiting,Pago esperando,انتظار الدفع
+Active Tickets,Active Tickets,Boletos activos,تذاكر نشطة
+Solved Tickets,Solved Tickets,Boletos resueltos,حل التذاكر
+All Tickets,All Tickets,Todas las entradas,جميع التذاكر
+action,Action,Acción,فعل
+Mark as Solved,Mark as Solved,Marca como se resuelve,علامة كما تم حلها
+Support Details,Support Details,Detalles de apoyo,تفاصيل الدعم
+Subject,Subject,Sujeto,موضوع
+Description,Description,Descripción,وصف
+Attachments,Attachments,Archivos adjuntos,المرفقات
+Question,Question,Pregunta,سؤال
+Answer,Answer,Respuesta,إجابة
+Details,Details,Detalles,تفاصيل
+Charges,Charges,Cargos,رسوم
+Fixed Charge*,Fixed Charge*,Cargo fijo*,شحنة ثابتة*
+Percent Charge*,Percent Charge*,Porcentaje de carga*,تكلفة النسبة المئوية*
+Page Name,Page Name,Nombre de la página,اسم الصفحة
+Range,Range,Rango,يتراوح
+Minimum Amount,Minimum Amount,Monto minimo,الحد الأدنى للمبلغ
+Maximum Amount,Maximum Amount,Cantidad máxima,الحد الأقصى للمبلغ
+Admin,Admin,Administración,مسؤل
+Settings,Settings,Ajustes,إعدادات
+Language,Language,Idioma,لغة
+Layout Mode,Layout Mode,Modo de diseño,وضع التصميم
+Dark Mode,Dark Mode,Modo oscuro,الوضع المظلم
+Topbar Color,Topbar Color,Color topbar,لون الشفر
+Light Mode,Light Mode,Modo de luz,وضع الضوء
+Sidebar Color,Sidebar Color,Color de la barra lateral,لون الشريط الجانبي
+Min Sidebar Color,Min Sidebar Color,Min Color de la barra lateral,لون الشريط الجانبي
+Direction,Direction,Dirección,اتجاه
+RTL Support,RTL Support,Soporte RTL,دعم RTL
+Reset To Default,Reset To Default,Restablecen a los predeterminados,إعادة تعيين إلى الافتراضي
+Notification,Notification,Notificación,إشعار
+Clear All,Clear All,Limpiar todo,امسح الكل
+No new notification found!,No new notification found!,¡No se encontró una nueva notificación!,لم يتم العثور على إشعار جديد!
+Admin Profile,Admin Profile,Perfil de administración,ملف تعريف المسؤول
+Change Password,Change Password,Cambiar la contraseña,تغيير كلمة المرور
+menu-title,menu-title,título de menú,القائمة
+Auth Section,Auth Section,Sección de autores,قسم المصادقة
+Blog Category,Blog Category,Categoría de blog,فئة المدونة
+Blog Section,Blog Section,Sección de blogs,قسم المدونة
+FAQ Section,FAQ Section,Sección de preguntas frecuentes,قسم الأسئلة الشائعة
+Contact Messages,Contact Messages,Mensajes de contacto,اتصل بالرسائل
+Add Money Details,Add Money Details,Agregar detalles de dinero,أضف تفاصيل المال
+USER,USER,USUARIO,مستخدم
+SL,SL,SLE,SL
+Dashboard,Dashboard,Panel,لوحة القيادة
+active,active,activo,نشيط
+Favicon (Dark Version),Favicon (Dark Version),Favicon (versión oscura),Favicon (نسخة مظلمة)
+Favicon (Light Version),Favicon (Light Version),Favicon (versión ligera),Favicon (نسخة خفيفة)
+Logo (Dark Version),Logo (Dark Version),Logotipo (versión oscura),شعار (نسخة مظلمة)
+Logo (Light Version),Logo (Light Version),Logotipo (versión ligera),شعار (إصدار الضوء)
+Social Description,Social Description,Descripción social,الوصف الاجتماعي
+Social Title,Social Title,Título social,العنوان الاجتماعي
+Thumbnail Image,Thumbnail Image,Imagen en miniatura,صورة مصغرة
+Web Version,Web Version,Versión web,إصدار الويب
+Site Title,Site Title,Título del sitio,عنوان الموقع
+Deactivated,Deactivated,Desactivado,إلغاء تنشيطه
+Icon,Icon,Icono,أيقونة
+Activated,Activated,Activado,مفعل
+Image Assets,Image Assets,Activos de imagen,أصول الصورة
+Email Notification,Email Notification,Notificación de correo electrónico,إشعار البريد الإلكتروني
+Force SSL,Force SSL,Forzar SSL,قوة SSL
+Agree Policy,Agree Policy,Política de acuerdo,توافق على السياسة
+Secure Password,Secure Password,Contraseña segura,كلمة مرور تأمين
+User Registration,User Registration,registro de usuario,تسجيل المستخدم
+Site Name,Site Name,Nombre del sitio,اسم الموقع
+Admin Care,Admin Care,Atención administrativa,رعاية المسؤول
+All,All,Todo,الجميع
+Admin Roles,Admin Roles,Roles de administración,أدوار المشرف
+Admin Role,Admin Role,Rol de administrador,دور المسؤول
+All Admin Roles,All Admin Roles,Todos los roles de administración,جميع أدوار المشرف
+Role Permission,Role Permission,Permiso de rol,إذن الدور
+All Permissions,All Permissions,Todos los permisos,جميع الأذونات
+Email To Admin,Email To Admin,Correo electrónico al administrador,البريد الإلكتروني إلى المسؤول
+Choose One,Choose One,Elige uno,اختر واحدة
+Select Role,Select Role,Rol de selección,حدد الدور
+Language Code,Language Code,Código de lenguaje,رمز اللغة
+Language Name,Language Name,Nombre del lenguaje,اسم اللغة
+Language Manager,Language Manager,Administrador de idiomas,مدير اللغة
+All Admin,All Admin,Todos los administradores,كل المشرف
+Download,Download,Descargar,تحميل
+Import,Import,Importar,يستورد
+App Settings,App Settings,Ajustes de Aplicacion,إعدادات التطبيقات
+Onboard Screen,Onboard Screen,Pantalla a bordo,على متن الشاشة
+iOS App URL,iOS App URL,URL de la aplicación iOS,IOS APP URL
+Android App URL,Android App URL,URL de la aplicación Android,Android App URL
+Splash Screen,Splash Screen,Pantalla de bienvenida,شاشة البداية
+App Urls,App Urls,URL de aplicaciones,APP urls
+Setup Category Type,Setup Category Type,Tipo de categoría de configuración,نوع فئة الإعداد
+Setup Section,Setup Section,Sección de configuración,قسم الإعداد
+Verification Center,Verification Center,Centro de verificación,مركز التحقق
+GDPR Cookie,GDPR Cookie,Galleta GDPR,ملف تعريف الارتباط الناتج المحلي الإجمالي
+Policy Link*,Policy Link*,Enlace de política*,رابط السياسة*
+Setup Currency,Setup Currency,Moneda de configuración,الإعداد العملة
+User Analytics,User Analytics,Análisis de usuarios,تحليلات المستخدم
+View Users,View Users,Ver usuarios,عرض المستخدمين
+Escrow Details,Escrow Details,Detalles del depósito,تفاصيل الضمان
+Title,Title,Título,عنوان
+Role,Role,Role,دور
+Enabled Currency,Enabled Currency,Moneda habilitada,عملة ممكّنة
+Supported Currency,Supported Currency,Moneda compatible,العملة المدعومة
+Currency Code,Currency Code,Código de moneda,رمز العملة
+Currency Symbol,Currency Symbol,Símbolo de moneda,رمز العملة
+Disabled,Disabled,Desactivado,عاجز
+Last Month,Last Month,El mes pasado,الشهر الماضي
+This Month,This Month,Este mes,هذا الشهر
+Gateway Environment,Gateway Environment,Entorno de puerta de enlace,بيئة بوابة
+Gateway,Gateway,Puerta,بوابة
+Solved,Solved,Resuelto,تم حلها
+Escrow Profit,Escrow Profit,Ganancia de depósito en garantía,ربح الضمان
+Created By,Created By,Creado por,انشأ من قبل
+Product Type,Product Type,tipo de producto,نوع المنتج
+Total Price,Total Price,Precio total,السعر الكلي
+Charge Payer,Charge Payer,Pagador de cargos,دافع الرسوم
+Status,Status,Estado,حالة
+Remarks,Remarks,Observaciones,ملاحظات
+Payment Details,Payment Details,Detalles del pago,بيانات الدفع
+Fees & Charge,Fees & Charge,Tarifas y cargo,الرسوم والشحن
+Seller Amount,Seller Amount,Cantidad del vendedor,مبلغ البائع
+Available balance,Available balance,Saldo disponible,الرصيد المتوفر
+Pay with,Pay With,Pagar con,ادفع عن طريق
+Exchange Rate,Exchange Rate,Tipo de cambio,سعر الصرف
+Buyer Paid,Buyer Paid,Comprador pagado,دفع المشتري
+Support Chat,Support Chat,Chat de apoyo,دعم الدردشة
+Escrow Category,Escrow Category,Categoría de custodia,فئة الضمان
+Extensions,Extensions,Extensiones,الامتدادات
+Instructions,Instructions,Instrucciones,تعليمات
+Languages,Languages,Lenguas,اللغات
+Language Keywords of English,Language Keywords of English,Palabras clave del idioma del inglés,الكلمات الرئيسية للغة للغة الإنجليزية
+Money Out Details,Money Out Details,Detalles de Out Money,تفاصيل المال
+Add Money,Add Money,Agregar dinero,إضافة المال
+Update Gateway,Update Gateway,Actualización de la puerta de enlace,تحديث بوابة
+Automatic Add Money,Automatic Add Money,Automático Agregar dinero,تلقائي إضافة المال
+Add Automatic Gateway (Add Money),Add Automatic Gateway (Add Money),Agregar puerta de enlace automática (agregar dinero),أضف بوابة أوتوماتيكية (إضافة أموال)
+gatewayImage,gatewayImage,gatewayimage,بوابة
+Gateway Image,Gateway Image,Imagen de puerta de enlace,بوابة صورة
+Genarate Fields,Genarate Fields,Campos de genarato,حقول الجينارات
+Money Out,Money Out,Apagarse,لم يبقى اي من المال
+Automatic,Automatic,Automático,تلقائي
+Bonus,Bonus,Prima,علاوة
+Clear Cache,Clear Cache,Limpiar cache,مسح ذاكرة التخزين المؤقت
+Manual,Manual,Manual,يدوي
+Method,Method,Método,طريقة
+Selectable,Selectable,Seleccionable,يمكن اختياره
+Encryption,Encryption,Encriptación,التشفير
+Select Language,Select Language,Seleccione el idioma,اختار اللغة
+Port,Port,Puerto,ميناء
+Language File,Language File,Archivo de idiomas,ملف اللغة
+Host,Host,Anfitrión,يستضيف
+Password Change,Password Change,Cambio de contraseña,تغيير كلمة السر
+Save & Change,Save & Change,Guardar cambios,حفظ وتغيير
+Country,Country,País,دولة
+State,State,Estado,ولاية
+City,City,Ciudad,مدينة
+Push Notification,Push Notification,Notificación de inserción,إشعار دفع
+Browser Push Notification Configuration,Browser Push Notification Configuration,Configuración de notificación de push del navegador,تكوين إشعار دفع المتصفح
+Broadcasting/ Internal Notification Configuration,Broadcasting/ Internal Notification Configuration,Configuración de transmisión/ notificación interna,تكوين الإذاعة/ الإخطار الداخلي
+Send Notification,Send Notification,Enviar notificación,إرسال إشعار
+Latest Notifications,Latest Notifications,Últimas notificaciones,أحدث الإخطارات
+Server Info,Server Info,Información del servidor,معلومات الخادم
+Version,Version,Versión,إصدار
+App Name,Escroc,Escrroc,دكوس
+App Environment,App Environment,Entorno de aplicaciones,بيئة التطبيق
+App Debug,App Debug,Depurar la aplicación,تصحيح التطبيق
+App Mode,App Mode,Modo de aplicación,وضع التطبيق
+Database Connection,Database Connection,Conexión de base de datos,اتصال قاعدة البيانات
+Database Host,Database Host,Host de base de datos,مضيف قاعدة البيانات
+Database Port,Database Port,Puerto de base de datos,منفذ قاعدة البيانات
+Database Name,Database Name,Nombre de la base de datos,اسم قاعدة البيانات
+Database Username,Database Username,Nombre de usuario de la base de datos,قاعدة بيانات قاعدة البيانات
+PHP Version,PHP Version,Versión php,إصدار PHP
+Laravel Version,Laravel Version,Versión de Laravel,نسخة لارافيل
+Server Software,Server Software,Software de servidor,برنامج الخادم
+Server IP Address,Server IP Address,Dirección IP del servidor,عنوان IP الخادم
+Server Protocol,Server Protocol,Protocolo de servidor,بروتوكول الخادم
+Timezone,Timezone,Zona horaria,وحدة زمنية
+Testimonial Section,Testimonial Section,Sección de testimonios,قسم الشهادة
+App Section,App Section,Sección de la aplicación,قسم التطبيق
+Contact Section,Contact Section,Sección de contacto,قسم الاتصال
+Feature Section,Feature Section,Sección de características,ميزة قسم
+Service Section,Service Section,Sección de servicio,قسم الخدمة
+About Section,About Section,Acerca de la sección,حول القسم
+Brand Section,Brand Section,Sección de marca,قسم العلامة التجارية
+Banner Section,Banner Section,Banner,قسم لافتة
+Setup Web Content,Setup Web Content,Configurar contenido web,إعداد محتوى الويب
+Setup Email,Setup Email,Correo electrónico de configuración,إعداد البريد الإلكتروني
+Email Method,Email Method,Método de correo electrónico,طريقة البريد الإلكتروني
+Email Send Method*,Email Send Method*,Método de envío de correo electrónico*,طريقة إرسال البريد الإلكتروني*
+Setup KYC,Setup KYC,Configurar KYC,إعداد KYC
+KYC Data Form,KYC Data Form,Formulario de datos de KYC,نموذج بيانات KYC
+Setup Pages,Setup Pages,Configuración de páginas,صفحات الإعداد
+btn--base modal-btn,btn--base modal-btn,BTN-Base Modal-BTN,BTN-Modal-BTN
+fas fa-plus me-1,fas fa-plus me-2,fas fa-plus me-2,fas fa-plus me-2
+Add Item ,Add Item ,Añadir artículo,اضافة عنصر
+Edit Item,Edit Item,Elemento de edición,تعديل عنصر
+Ticket ID,Ticket ID,Identificación de entradas,معرف التذاكر
+Support Ticket,Support Ticket,Boleto de apoyo,بطاقة الدعم
+All Ticket,All Ticket,Todo el boleto,كل التذاكر
+Category Name,Category Name,nombre de la categoría,اسم التصنيف
+Add Category,Add Category,añadir categoría,إضافة فئة
+Fees & Charges,Fees & Charges,Tarifas y cargos,الرسوم والرسوم
+Useful Links,Useful Links,Enlaces útiles,روابط مفيدة
+User Overview,User Overview,Descripción general del usuario,نظرة عامة على المستخدم
+Full Name,Full Name,Nombre completo,الاسم الكامل
+Setup Blog Category,Setup Blog Category,Categoría de blog de configuración,فئة المدونة الإعداد
+Created Time,Created Time,Tiempo creado,خلق الوقت
+Username:,Username:,Nombre de usuario:,اسم المستخدم:
+User Details,User Details,Detalles de usuario,بيانات المستخدم
+User Image,User Image,Imagen de usuario,صورة المستخدم
+Username,Username:,Nombre de usuario:,اسم المستخدم:
+Last Login:,Last Login:,Último acceso:,آخر تسجيل دخول:
+Information of User,Information of User,Información del usuario,معلومات المستخدم
+Phone Number,Phone Number,Número de teléfono,رقم التليفون
+Add/Subtract Balance,Add/Subtract Balance,Balance de suma/resta,إضافة/طرح التوازن
+balance,balance,balance,توازن
+Type,Type,Tipo,يكتب
+User Wallet,User Wallet,Billetera del usuario,محفظة المستخدم
+Setup SEO,Setup SEO,Configuración de SEO,إعداد SEO
+Zip/Postal,Zip/Postal,Código postal,الرمز البريدي
+Email To Users,Email To Users,Correo electrónico a los usuarios,البريد الإلكتروني للمستخدمين
+All Users,All Users,Todos los usuarios,جميع المستخدمين
+Edit KYC,Edit KYC,Editar kyc,تحرير KYC
+Information of Logs,Information of Logs,Información de los registros,معلومات السجلات
+File not found!,File not found!,¡Archivo no encontrado!,لم يتم العثور على الملف!
+alert alert-primary,alert alert-primary,Alerta de alerta-primaria,التنبيه في حالة تأهب
+KYC Information not submitted yet,KYC Information not submitted yet,Información de KYC aún no se ha enviado,معلومات KYC لم يتم تقديمها بعد
+Login Logs,Login Logs,Iniciar sesión,سجلات تسجيل الدخول
+Email Logs,Email Logs,Registros de correo electrónico,سجلات البريد الإلكتروني
+User Login Logs,User Login Logs,Registros de inicio de sesión de usuario,سجلات تسجيل الدخول المستخدم
+User Email Logs,User Email Logs,Registros de correo electrónico de usuario,سجلات البريد الإلكتروني للمستخدم
+Web Settings,Web Settings,Configuración web,إعدادات الويب
+Login as Member,Login as Member,Iniciar sesión como miembro,تسجيل الدخول كعضو
+Basic Settings,Basic Settings,Ajustes básicos,الإعدادات الأساسية
+Site Base Color,Site Base Color,Color base del sitio,لون قاعدة الموقع
+OTP Expiration,OTP Expiration,Vencimiento de OTP,انتهاء صلاحية OTP
+input-group-text,input-group-text,text-group de entrada,إدخال مجموعة الفئة
+Seconds,Seconds,Segundos,ثوان
+Activation Settings,Activation Settings,Configuración de activación,إعدادات التنشيط
+Search,Search,Buscar,يبحث
+Type Here,Type Here,Escriba aquí,أكتب هنا
+Search Engine Optimization (SEO),Search Engine Optimization (SEO),Optimización de motores de búsqueda (SEO),تحسين محرك البحث (SEO)
+401 - Unauthorized,402 - Unauthorized,402 - no autorizado,402 - غير مصرح به
+Pending Logs,Pending Logs,Registros pendientes,سجلات معلقة
+All Logs,All Logs,Todos los registros,جميع السجلات
+Unauthorized...!,Unauthorized...!,No autorizado...!,غير مصرح...!
+Back To Home,Back To Home,De vuelta a casa,العودة إلى المنزل
+403 - Forbidden,404 - Forbidden,404 - Prohibido,404 - ممنوع
+Forbidden...!,Forbidden...!,Prohibido...!,مُحرَّم...!
+404 - Page Not Found,405 - Page Not Found,405 - Página no encontrada,405 - الصفحة لم يتم العثور عليها
+Page Not Found...!,Page Not Found...!,Página no encontrada...!,الصفحة غير موجودة...!
+419 - Page Expired,420 - Page Expired,420 - Página expirada,420 - انتهت صلاحية الصفحة
+Page Expired...!,Page Expired...!,Página expirada ...!,انتهت صلاحية الصفحة ...!
+500 - Server Error,501 - Server Error,501 - Error del servidor,501 - خطأ الخادم
+Server Error...!,Server Error...!,Error del Servidor...!,خطأ في الخادم...!
+Public,Public,Público,عام
+field-preffix-label,field-preffix-label,etiqueta de campo de campo,الميدان preffix-label
+Two Factor Authorization,Two Factor Authorization,Autorización de dos factores,اثنين من التفويض عامل
+Please enter your authorization code to access dashboard,Please enter your authorization code to access dashboard,Ingrese su código de autorización para acceder al tablero,الرجاء إدخال رمز التفويض الخاص بك للوصول إلى لوحة القيادة
+Authorize,Authorize,Autorizar,إذن
+2FA Verification,2FA Verification,VERIFICACIÓN 2FA,2FA التحقق
+Email Verification,Email Verification,verificacion de email,تأكيد بواسطة البريد الالكتروني
+KYC Verification,KYC Verification,Verificación de KYC,التحقق من KYC
+title text--warning,title text--warning,Texto del título-Advertencia,نص العنوان-التصنيع
+Permission Name,Permission Name,Nombre de permiso,اسم إذن
+Asign Admin,Asign Admin,Asign Admin,asign المشرف
+Permission Group,Permission Group,Grupo de permisos,مجموعة الإذن
+Role Name,Role Name,Nombre de rol,اسم الدور
+Your KYC information is rejected.,Your KYC information is rejected.,Su información de KYC es rechazada.,تم رفض معلومات KYC الخاصة بك.
+Verify KYC,Verify KYC,Verificar KYC,تحقق من KYC
+Please submit your KYC information with valid data.,Please submit your KYC information with valid data.,Envíe su información de KYC con datos válidos.,يرجى إرسال معلومات KYC الخاصة بك مع بيانات صالحة.
+Back to ,Back to ,De regreso,ارجع الى
+Account Authorization,Account Authorization,Autorización de cuenta,ترخيص الحساب
+Need to verify your account. Please check your mail inbox to get the authorization code,Need to verify your account. Please check your mail inbox to get the authorization code,Necesita verificar su cuenta. Consulte su bandeja de entrada de correo para obtener el código de autorización,تحتاج إلى التحقق من حسابك. يرجى التحقق من صندوق البريد الخاص بك للحصول على رمز التفويض
+forgot-item,forgot-item,olvidado,نسيت العنصر
+You can resend the code after,You can resend the code after,Puede reenviar el código después,يمكنك إعادة تقديم الرمز بعد
+time,time,tiempo,وقت
+Back To Login,Back To Login,Atrás para iniciar sesión,العودة إلى تسجيل الدخول
+Code,Code,Código,شفرة
+Symbol,Symbol,Símbolo,رمز
+Send Code,Send Code,Enviar código,إرسال الرمز
+Password Reset,Password Reset,Restablecimiento de contraseña,إعادة تعيين كلمة المرور
+Reset your password,Reset your password,Restablecer su contraseña,اعد ضبط كلمه السر
+OTP Verification,OTP Verification,Verificación OTP,التحقق من OTP
+Please check your email address to get the OTP (One time password).,Please check your email address to get the OTP (One time password).,Verifique su dirección de correo electrónico para obtener el OTP (contraseña única).,يرجى التحقق من عنوان بريدك الإلكتروني للحصول على OTP (كلمة مرور لمرة واحدة).
+Verify,Verify,Verificar,يؤكد
+user.register,user.register,usuario. Registrar,user.register
+Register Now,Register Now,Regístrate ahora,سجل الان
+Already Have An Account?,Already Have An Account?,¿Ya tienes una cuenta?,هل لديك حساب؟
+KYC Information,KYC Information,Información de KYC,معلومات KYC
+Please verify KYC information,Please verify KYC information,Verifique la información de KYC,يرجى التحقق من معلومات KYC
+Add Balance via,Add Balance via,Agregar balance a través de,أضف التوازن عبر
+Money Out via,Money Out via,Dinero a través de,المال عبر
+Exchange Money,Exchange Money,Cambio de moneda,الصرافة
+Balance Update From Admin,Balance Update From Admin,Actualización de equilibrio desde Admin,تحديث التوازن من المسؤول
+Both,Both,Ambos,كلاهما
+Escrow Conversation,Escrow Conversation,Conversación de custodia,محادثة الضمان
+My Role,My Role,Mi papel,دوري
+text-capitalize text-right,text-capitalize text-right,Capitalización de texto-derecha de texto,النصوص النصية النصية
+text-right,text-right,derecho de texto,النص اليمين
+Attachment,Attachment,Adjunto,مرفق
+Wallet,Wallet,Billetera,محفظة
+My Escrow,My Escrow,Mi depósito,ضواحي
+Rejected,Rejected,Rechazado,مرفوض
+Option,Option,Opción,خيار
+Waiting,Waiting,Espera,منتظر
+Escrow Manual Payment,Escrow Manual Payment,Pago manual de depósito,دفع يدوي الضمان
+Optional,Optional,Opcional,خياري
+Logout,Logout,Cerrar sesión,تسجيل خروج
+Entered Amount,Entered Amount,Cantidad ingresada,تم إدخال المبلغ
+Conversion Amount,Conversion Amount,Cantidad de conversión,مبلغ التحويل
+Total Fees & Charges,Total Fees & Charges,Tarifas y cargos totales,إجمالي الرسوم والرسوم
+last,last,último,آخر
+Total Payable,Total Payable,Total a pagar,إجمالي الدفع
+Razorpay Payment,Razorpay Payment,Pago de Razorpay,دفعة Razorpay
+Total Payable Amount,Total Payable Amount,Monto total por pagar,إجمالي المبلغ المستحق
+Manual Payment,Manual Payment,Pago manual,الدفع اليدوي
+Confirm Payment,Confirm Payment,Confirmar pago,تأكيد الدفع
+d-block text-center,d-block text-center,D-Bloque D-Center,د بلوك النص مركز
+rate-show,rate-show,show de tasas,عرض معدل
+Payment Gateway,Payment Gateway,Pasarela,بوابة الدفع
+Money Exchange,Money Exchange,Cambio de dinero,حوالة نقدية
+Exchange From,Exchange From,Intercambiar desde,تبادل من
+Exchange To,Exchange To,Intercambiar,تبادل ل
+From Wallet,From Wallet,De la billetera,من محفظة
+To Exchange,To Exchange,A cambio,للتبادل
+Total Exchange Amount,Total Exchange Amount,Cantidad de intercambio total,إجمالي مبلغ التبادل
+Converted Amount,Converted Amount,Cantidad convertida,المبلغ المحول
+Total Charge,Total Charge,Carga total,القيمة الاجمالية
+Will Get,Will Get,Obtendrá,سوف تحصل
+Confirm,Confirm,Confirmar,يتأكد
+request-amount,request-amount,cantidad de la solicitud,طلب
+profile,Profile,Perfil,حساب تعريفي
+Phone,Phone,Teléfono,هاتف
+Deactive,Deactive,Desactivo,إلهي
+Change,Change,Cambiar,يتغير
+Two Factor Authenticator,Two Factor Authenticator,Autenticador de dos factores,اثنان عامل المصادقة
+btn--base bg--warning w-100 active-deactive-btn,btn--base bg--warning w-100 active-deactive-btn,BTN-Base BG-Harning W-100 Active-Deactive-BTN,BTN-Base BG-W-100 Active-Deactive-BTN
+Disable,Disable,Desactivar,إبطال
+text--danger mt-3,text--danger mt-4,Texto-Danger MT-4,نص-خطر MT-4
+t login in your account.,t login in your account.,t Inicie sesión en su cuenta.,T تسجيل الدخول في حسابك.
+btn--base w-100 active-deactive-btn,btn--base w-100 active-deactive-btn,BTN-Base W-100 Active-Deactive-BTN,BTN-قاعدة W-100 النشط BTN
+Blog Edit,Blog Edit,Blog Editar,تحرير المدونة
+Enable,Enable,Permitir,يُمكَِن
+Google Authenticator,Google Authenticator,Autenticador de Google,مصادقة Google
+Download Google Authenticator App,Download Google Authenticator App,Descargar la aplicación Google Authenticator,تنزيل تطبيق Google Authenticator
+Support Tickets,Support Tickets,Boletos de apoyo,تذاكر الدعم الفني
+Submit Ticket,Submit Ticket,Envío,قدم التذكرة
+las la-plus me-1,las la-plus me-2,Las la-plus me-2,لاس لا بيروس ME-2
+Add New Ticket,Add New Ticket,Agregar nuevo boleto,أضف تذكرة جديدة
+Transactions,Transactions,Actas,المعاملات
+Total Escrow,Total Escrow,Depósito total,إجمالي الضمان
+Completed Logs,Completed Logs,Registros completados,سجلات مكتملة
+Canceled Logs,Canceled Logs,Registros cancelados,سجلات ملغاة
+Add Money Logs,Add Money Logs,Agregar registros de dinero,أضف سجلات الأموال
+Email,Email,Correo electrónico,بريد إلكتروني
+Language switch successfully!,Language switch successfully!,¡Cambio de idioma con éxito!,تبديل اللغة بنجاح!
+Escrow Logs,Escrow Logs,Registros de custodia,سجلات الضمان
+All Escrow Logs,All Escrow Logs,Todos los registros de depósito,جميع سجلات الضمان
+Money Out Logs,Money Out Logs,Money Out Registros,سجلات الأموال
+Tags,Tags,Etiquetas,العلامات
+Active Users,Active Users,Usuarios activos,المستخدمين النشطين
+User Care,User Care,Cuidado de los usuarios,رعاية المستخدم
+Add money details for,Add money details for,Agregar detalles de dinero para,إضافة تفاصيل المال ل
+Banned Users,Banned Users,Usuarios prohibidos,المستخدمين المحظورون
+KYC Unverified,KYC Unverified,KYC no verificado,KYC غير التحقق
+Email Unverified,Email Unverified,Correo electrónico no verificado,البريد الإلكتروني غير التحقق
+Payment Required,Payment Required,pago requerido,الدفع المطلوب
+Too Many Requests,Too Many Requests,Demasiadas solicitudes,طلبات كثيرة جدا
+Service Unavailable,Service Unavailable,Servicio No Disponible,الخدمة غير متوفرة
+blog.details,blog.details,Blog.details,blog.details
+Read More,Read More,Leer más,اقرأ أكثر
+Categories,Categories,Categorías,فئات
+Recent Posts,Recent Posts,Mensajes recientes,المشاركات الاخيرة
+Enter Name,Enter Name,Ingrese su nombre,أدخل الاسم
+Enter Email,Enter Email,Ingrese correo electrónico,أدخل البريد الإلكتروني
+Message,Message,Mensaje,رسالة
+Write Here,Write Here,Escribe aquí,اكتب هنا
+Send Message,Send Message,Enviar mensaje,إرسال الرسالة
+FAQ,FAQ,Preguntas más frecuentes,التعليمات
+Made by,Made by,Hecho por,مصنوع بواسطة
+user.dashboard,user.dashboard,usuarios. Dashboard,user.dashboard
+user.login,user.login,inicio de sesión de usuario,user.login
+Login/Register,Login/Register,Iniciar sesión/registrarse,دخولتسجيل
+Selling,Selling,Venta,يبيع
+Buying,Buying,Comprar,الشراء
+See Our Recent Blog,See Our Recent Blog,Vea nuestro blog reciente,شاهد مدونتنا الحديثة
+Your KYC information is verified,Your KYC information is verified,Su información de KYC está verificada,تم التحقق من معلومات KYC الخاصة بك
+I have agreed with,I have agreed with,He estado de acuerdo con,لقد وافقت مع
+page.view,page.view,vista de pagina,page.view
+terms-and-conditions,terms-and-conditions,Términos y condiciones,الأحكام والشروط
+Terms Of Use,Terms Of Use,Condiciones de uso,شروط الاستخدام
+Privacy Policy,Privacy Policy,política de privacidad,سياسة الخصوصية
+Transaction ID,Transaction ID,ID de transacción,رقم المعاملة
+Reject Reason,Reject Reason,Rechazar la razón,رفض السبب
+Release Request,Release Request,Solicitud de lanzamiento,طلب الإصدار
+Release Payment,Release Payment,Liberar el pago,دفع الإفراج
+Dispute Payment,Dispute Payment,Pago de disputas,دفع المنازعات
+Seller Will Get,Seller Will Get,El vendedor obtendrá,سوف يحصل البائع
+Buyer Will Pay,Buyer Will Pay,El comprador pagará,المشتري سيدفع
+.sellerGet,.sellerGet,.lanterget,.sellerget
+I Will Get,I Will Get,Conseguiré,سأجلب
+.buyerPay,.buyerPay,.BuyerPay,.buyerpay
+You Will Pay,You Will Pay,Tu vas a pagar,سوف تدفع
+Completed,Completed,Terminado,مكتمل
+Completed Escrow,Completed Escrow,Cuitrado completado,الضمان المكتمل
+Pending Escrow,Pending Escrow,Depósito de depósito,الضمان المعلق
+Disputed Escrow,Disputed Escrow,Depósito en depósito,الضمان المتنازع عليه
+Transactions Log,Transactions Log,Registro de transacciones,سجل المعاملات
+View More,View More,Ver más,عرض المزيد
+pagination.previous,pagination.previous,paginación.,ترقيم الصفحات
+pagination.next,pagination.next,paginación.next,ترقيم الصفحات
+Pagination Navigation,Pagination Navigation,Navegación por paginación,ملاحة ترقيم الصفحات
+Showing,Showing,Demostración,تظهر
+to,to,a,ل
+Money Out Chart,Money Out Chart,Gráfico de dinero fuera,الرسم البياني المال
+Add Money Chart,Add Money Chart,Agregar cuadro de dinero,إضافة الرسم البياني المال
+Escrow Chart,Escrow Chart,Gráfico de custodia,مخطط الضمان
+Total Users,Total Users,Usuarios totales,إجمالي المستخدمين
+User Active Tickets,User Active Tickets,Tickets activos del usuario,التذاكر النشطة للمستخدم
+Total Profit,Total Profit,Beneficio total,اجمالي الربح
+Money Out Balance,Money Out Balance,Balance de dinero fuera,المال الرصيد
+Add Money Balance,Add Money Balance,Agregar saldo de dinero,أضف رصيد الأموال
+of,of,de,ل
+Login Section Title*,Login Section Title*,Título de la sección de inicio de sesión*,عنوان قسم تسجيل الدخول*
+Login Section Text*,Login Section Text*,Texto de la sección de inicio de sesión*,نص قسم تسجيل الدخول*
+Register Section Title*,Register Section Title*,Título de la sección de registro*,عنوان قسم التسجيل*
+Register Section Text*,Register Section Text*,Texto de la sección de registro*,سجل قسم القسم*
+Forget Section Text*,Forget Section Text*,Olvídese del texto de la sección*,ننسى نص القسم*
+Forget Section Title*,Forget Section Title*,Olvídese del título de la sección*,ننسى عنوان القسم*
+Left Input Two*,Left Input Two*,Entrada izquierda dos*,المدخلات اليسار اثنين*
+Left Input One*,Left Input One*,Entrada izquierda uno*,المدخلات اليسرى واحد*
+Left Sub Heading*,Left Sub Heading*,Subcuito izquierdo*,العنوان الفرعي اليسار*
+Left Heading*,Left Heading*,Encabezado izquierdo*,اليسار العنوان*
+BUTTON NAME,BUTTON NAME,Nombre del botón,اسم الزر
+LINK,LINK,ENLACE,وصلة
+Right Details*,Right Details*,Detalles correctos*,التفاصيل الصحيحة*
+Right Heading*,Right Heading*,Dirección derecha*,العنوان الأيمن*
+User Type,User Type,Tipo de usuario,نوع المستخدم
+Icon Show,Icon Show,Show de iconos,عرض الأيقونة
+Left Button Name*,Left Button Name*,Nombre del botón izquierdo*,اسم الزر الأيسر*
+Right Button Name*,Right Button Name*,Nombre del botón derecho*,اسم الزر الأيمن*
+Front Image*,Front Image*,Imagen frontal*,الصورة الأمامية*
+Right Input Two*,Right Input Two*,Entrada correcta dos*,الإدخال الصحيح اثنين*
+Item Image,Item Image,Imagen de elemento,صورة البند
+Right Input One*,Right Input One*,Entrada correcta uno*,الإدخال الصحيح واحد*
+Sub Heading*,Sub Heading*,Subcuente*,العنوان الفرعي*
+Heading*,Heading*,Título*,عنوان*
+Left Details*,Left Details*,Detalles de izquierda*,التفاصيل اليسار*
+results,results,resultados,نتائج
+Go to page :page,Go to page :page,Ir a la página: página,انتقل إلى الصفحة: الصفحة
+page,page,página,صفحة
+Banned,Banned,Prohibido,محظور
+Unverified,Unverified,Inconfirmado,لم يتم التحقق منه
+Latest Transactions,Latest Transactions,Últimas transacciones,أحدث المعاملات
+Undefined prope...,Undefined prope...,Propope indefinido ...,Prope غير محدد ...
+escroc,escroc,escrroc,دكوس
+BASE TABLE,BASE TABLE,Mesa base,الجدول الأساسي
+Home,Home,Hogar,بيت
+About,About,Acerca de,عن
+Services,Services,Servicios,خدمات
+Features,Features,Características,سمات
+Blog,Blog,Blog,مدونة
+Contact,Contact,Contacto,اتصال
+Refund Policy,Refund Policy,Politica de reembolso,سياسة الاسترجاع
+Terms & Conditions,Terms & Conditions,Términos y condiciones,البنود و الظروف
+I'm,I'm,Soy,أنا
+for,for,para,ل
+Create New Escrow,Create New Escrow,Crea un nuevo depósito,إنشاء ضمان جديد
+Get Started,Get Started,Empezar,البدء
+Help Center,Help Center,Centro de ayuda,مركز المساعدة
+How can we help you,How can we help you,Como podemos ayudarte,كيف يمكننا مساعدتك
+Get Support,Get Support,Obtener apoyo,احصل على الدعم
+2FA Security,2FA Security,2FA SEGURIDAD,2FA الأمن
+Escrow Id,Escrow Id,ID de custodia,معرف الضمان
+Amount,Amount,Cantidad,كمية
+My Wallet,My Wallet,Mi billetera,محفظتى
+Submit Escrow,Submit Escrow,Enviar depósito en garantía,إرسال الضمان
+Confirm & Send,Confirm & Send,Confirmar y enviar,تأكيد وإرسال
+Confirm & Pay,Confirm & Pay,Confirmar y pagar,تأكيد ودفع
+Transaction Log,Transaction Log,Registro de transacciones,سجل المعاملات
+Add Money Log,Add Money Log,Agregar registro de dinero,أضف سجل الأموال
+Summery,Summery,Veraniego,صيفي
+Money Exchange Log,Money Exchange Log,Registro de intercambio de dinero,سجل تبادل الأموال
+Name,Name,Nombre,اسم
+Login Now,Login Now,Inicia sesión ahora,تسجيل الدخول الآن
+First Name,First Name,Nombre de pila,الاسم الأول
+Last Name,Last Name,Apellido,اسم العائلة
+Buyer,Buyer,Comprador,مشتر
+Seller,Seller,Vendedor,تاجر
+Enter Password,Enter Password,Introducir la contraseña,أدخل كلمة المرور
+Don't Have An Account?,Don't Have An Account?,¿No tienes una cuenta?,ليس لديك حساب؟
+Enter Verification Code,Enter Verification Code,Ingrese el código de verificación,أدخل رمز التحقق
+Enter New Password,Enter New Password,Ingrese nueva clave,أدخل كلمة مرور جديدة
+Enter Confirm Password,Enter Confirm Password,Ingrese Confirmar contraseña,أدخل تأكيد كلمة المرور
+App Version,App Version,Version de aplicacion,نسخة التطبيق
+please Fill Out The Field,Please Fill Out The Field,Por favor complete el campo,يرجى ملء الحقل
+enter,Enter,Ingresar,يدخل
+okay,Okay,Bueno,تمام
+congratulations,Congratulations,Felicidades,تهانينا
+secure System,Secure System,Sistema seguro,نظام آمن
+welcome Onboard,Welcome Onboard,La bienvenida a bordo,مرحبا بك على متن الطائرة
+welcome Message,"Welcome to Escroc. Thanks for using Escroc, we appreciate it.","Bienvenido a Escroc. Gracias por usar Escroc, lo apreciamos.",مرحبا بكم في الإقرار. شكرا لاستخدام الإقرار ، نحن نقدر ذلك.
+face Lock,Face Lock,Mechón,قفل الوجه
+finger Lock,Finger Lock,Mechón,قفل الإصبع
+password Lock,Password Lock,Bloqueo de contraseña,قفل كلمة المرور
+login With Email,Login with Email,Iniciar sesión con el correo electrónico,تسجيل الدخول مع البريد الإلكتروني
+fa Verification Sub Title,Enter OTP for added account security verification.,Ingrese OTP para la verificación de seguridad de la cuenta adicional.,أدخل OTP لمزيد من التحقق من أمان الحساب.
+fa OTP Code,FA OTP Code,Código FA OTP,رمز FA OTP
+login Title,Log in and Stay Connected,Inicie sesión y manténgase conectado,تسجيل الدخول والبقاء على اتصال
+login Sub Title,"Our secure login process ensures the confidentiality of your information. Log in today and stay connected to your finances, anytime and anywhere.","Nuestro proceso de inicio de sesión seguro garantiza la confidencialidad de su información. Inicie sesión hoy y manténgase conectado con sus finanzas, en cualquier momento y en cualquier lugar.",تضمن عملية تسجيل الدخول الآمنة لدينا سرية معلوماتك. قم بتسجيل الدخول اليوم والبقاء على اتصال بأموالك ، في أي وقت وفي أي مكان.
+forgot Password Sub Title,Take control of your account by resetting your password. Our password recovery page guides you through the necessary steps to securely reset your password.,Tome el control de su cuenta restableciendo su contraseña. Nuestra página de recuperación de contraseña lo guía a través de los pasos necesarios para restablecer de forma segura su contraseña.,تحكم في حسابك عن طريق إعادة تعيين كلمة المرور الخاصة بك. توجهك صفحة استرداد كلمة المرور الخاصة بنا من خلال الخطوات اللازمة لإعادة تعيين كلمة المرور الخاصة بك بشكل آمن.
+dont Have An Account,Dont Have An Account? Click The Register Button.,¿No tienes una cuenta? Haga clic en el botón Registro.,ليس لديك حساب؟ انقر فوق زر التسجيل.
+resend,Resend,Revender,إعادة إرسال
+otp Verification Sub Title,We sent a 6-digit code to your email. Please check your mail inbox or spam.,Enviamos un código de 6 dígitos a su correo electrónico. Consulte su bandeja de entrada de correo o spam.,أرسلنا رمز مكون من 6 أرقام إلى بريدك الإلكتروني. يرجى التحقق من صندوق البريد الخاص بك أو البريد العشوائي.
+reset Password Sub Title,Now you are able to reset your password. Please reset your password and try again.,Ahora puede restablecer su contraseña. Restablezca su contraseña y vuelva a intentarlo.,أنت الآن قادر على إعادة تعيين كلمة المرور الخاصة بك. يرجى إعادة تعيين كلمة المرور الخاصة بك والمحاولة مرة أخرى.
+old Password,Old password,Contraseña anterior,كلمة المرور القديمة
+reset Password Confirmation MSG,"Your password has been successfully reset, please try to login again.","Su contraseña se ha restablecido correctamente, intente iniciar sesión nuevamente.",تمت إعادة تعيين كلمة المرور الخاصة بك بنجاح ، يرجى محاولة تسجيل الدخول مرة أخرى.
+register,Register,Registro,يسجل
+register Title,Register for an Account Today,Regístrese para una cuenta hoy,سجل للحصول على حساب اليوم
+register Sub Title,"Become a part of our community by registering for an account today. Enjoy a range of benefits and features tailored to meet your needs. Our registration page makes it easy to create your account, providing a seamless and user-friendly experience.","Convierta en parte de nuestra comunidad registrándose para una cuenta hoy. Disfrute de una variedad de beneficios y características diseñadas para satisfacer sus necesidades. Nuestra página de registro facilita la creación de su cuenta, proporcionando una experiencia perfecta y fácil de usar.",كن جزءًا من مجتمعنا من خلال التسجيل لحساب اليوم. استمتع بمجموعة من الفوائد والميزات المصممة لتلبية احتياجاتك. تجعل صفحة التسجيل الخاصة بنا من السهل إنشاء حسابك ، مما يوفر تجربة سلسة وسهلة الاستخدام.
+i Have Agreed,I have agreed with,He estado de acuerdo con,لقد وافقت مع
+kyc Form,KYC Form,Forma kyc,شكل KYC
+Slug,Slug,Babosa,سبيكة
+Exchange Charges,Exchange Charges,Cargos de intercambio,رسوم التبادل
+update KYC Form,Update KYC Form,Actualizar el formulario KYC,تحديث نموذج KYC
+Add New,Add New,Agregar nuevo,اضف جديد
+Escrow Charges,Escrow Charges,Cargos de depósito,رسوم الضمان
+kyc Form Title,Identify Verification,Identificar verificación,تحديد التحقق
+kyc Form Sub Title,"Please submit your government ID and identify yourself through this form. It is completely safe, we always take care of our users documents.","Envíe su identificación del gobierno e identifica a través de este formulario. Es completamente seguro, siempre cuidamos de los documentos de nuestros usuarios.",يرجى تقديم معرف حكومتك وتحديد نفسك من خلال هذا النموذج. إنها آمنة تمامًا ، فنحن نعتني دائمًا بمستندات المستخدمين.
+CRYPTO,CRYPTO,Cripto,تشفير
+FIAT,FIAT,FÍAT,فيات
+select Country,Select Country,Seleccionar país,حدد الدولة
+id Type,ID Type,tipo de identificación,نوع الهوية
+select ID Type,Select ID Type,Seleccionar tipo de identificación,حدد نوع المعرف
+front Part,Front Part,Parte delantera,الجزء الامامي
+back Part,Back Part,Parte de atrás,الجزء الخلفي
+upload,Upload,Subir,رفع
+kyc Form Confirmation MSG,"Your document has been submit successfully, Please wait for admin approval.","Su documento ha sido enviado correctamente, espere la aprobación del administrador.",تم إرسال المستند الخاص بك بنجاح ، يرجى انتظار موافقة المسؤول.
+current Balance,Current Balance,Saldo actual,الرصيد الحالي
+notifications,Notifications,Notificaciones,إشعارات
+profile Info,Profile Information,información del perfil,معلومات الملف الشخصي
+escrow Log,Escrow Log,Registro de custodia,سجل الضمان
+available Wallet,Available Wallet,Billetera disponible,محفظة متوفرة
+accepted,Accepted,Aceptado,قبلت
+pending,Pending,Pendiente,قيد الانتظار
+verified,Verified,Verificado,تم التحقق
+disputed,Disputed,Cuestionado,متنازع عليها
+add New Escrow,Add New Escrow,Agregar nuevo depósito,إضافة ضمان جديد
+enter Title,Enter Title,Ingrese el título,أدخل العنوان
+category,Category,Categoría,فئة
+log Out Content,Are you sure you want to log out?,¿Estás seguro de que quieres cerrar sesión?,هل أنت متأكد أنك تريد تسجيل الخروج؟
+delete Account Content,Are you sure you want to delete account?,¿Estás seguro de que quieres eliminar la cuenta?,هل أنت متأكد أنك تريد حذف الحساب؟
+select Category,Select Category,selecciona una categoría,اختر الفئة
+select My Role,Select My Role,Seleccione mi papel,حدد دوري
+who Will Pay The Fees,Who will pay the fees,Quien pagará las tarifas,من سيدفع الرسوم
+select Who Will Pay The Fees,Select who will pay the fees,Seleccione quién pagará las tarifas,حدد من سيدفع الرسوم
+user Name Or Email,Username/Email,Nombre de usuario/correo electrónico,اسم المستخدم/البريد الإلكتروني
+select Payment Method,Select Payment Method,Seleccionar método de pago,اختار طريقة الدفع
+will Pay,Will Pay,Pagará,ستدفع
+preview,Preview,Avance,معاينة
+Escrow Request,Escrow Request,Solicitud de custodia,طلب الضمان
+total Amount,Total Amount,Cantidad total,المبلغ الإجمالي
+fees Charge,Fees & Charge,Tarifas y cargo,الرسوم والشحن
+fees,Fees,Honorarios,مصاريف
+Last Reply,Last Reply,Última respuesta,الرد الأخير
+limit,Limit,Límite,حد
+limit MSG,Follow The Limit,Seguir el límite,اتبع الحد
+you Will Get,You Will Get,Conseguirás,ستحصل
+buyer Pay,Buyer Pay,Pago del comprador,دفع المشتري
+confirm Pay,Confirm & Pay,Confirmar y pagar,تأكيد ودفع
+add New Escrow Confirmation MSG,"Your escrow request has been submit successfully, Please wait for admin approval.","Su solicitud de depósito en garantía se ha enviado correctamente, espere la aprobación del administrador.",تم إرسال طلب الضمان الخاص بك بنجاح ، يرجى انتظار موافقة المسؤول.
+add Money Confirmation MSG,"Your money has been added successfully, Thanks for using Escroc.","Su dinero se ha agregado con éxito, gracias por usar Escroc.",تمت إضافة أموالك بنجاح ، شكرًا على استخدام الإقرار.
+money Out Submit,Money Out Submit,Money Out Enviar,المال الخوض
+money Out Confirmation MSG,"Your money has been out successfully, Thanks for using Escroc.","Su dinero ha salido con éxito, gracias por usar Escroc.",لقد خرجت أموالك بنجاح ، شكرًا لاستخدام الإقرار.
+exchange,Exchange,Intercambio,تبادل
+exchange Details,Exchange Details,Detalles de intercambio,تفاصيل التبادل
+exchange Currency,Exchange Currency,Cambio de divisas,عملة التبادل
+exchange Amount,Exchange Amount,Monto de intercambio,مبلغ التبادل
+exchange Confirmation MSG,"Your money has been exchange successfully, Thanks for using Escroc.","Su dinero ha sido intercambiado con éxito, gracias por usar Escroc.",تم تبادل أموالك بنجاح ، شكرًا على استخدام الإقرار.
+recent Transactions,Recent Transactions,Transacciones Recientes,التحويلات الاخيرة
+update Profile,Update Profile,Actualización del perfil,تحديث الملف
+fa Security,2FA Security,2FA SEGURIDAD,2FA الأمن
+fa Verify,2FA Verify,2fa Verificar,2FA التحقق
+delete Account,Delete Account,Borrar cuenta,حذف الحساب
+add New Password,Add New Password,Agregar nueva contraseña,أضف كلمة مرور جديدة
+change Password Confirmation MSG,"Your password has been successfully Changed, please try to login again.","Su contraseña ha cambiado correctamente, intente iniciar sesión nuevamente.",تم تغيير كلمة المرور الخاصة بك بنجاح ، يرجى محاولة تسجيل الدخول مرة أخرى.
+address,Address,DIRECCIÓN,عنوان
+zip,Zip Code,Código postal,الرمز البريدي
+enable Two Fa,Enable 2FA Security,Habilitar la seguridad de 2FA,تمكين 2FA الأمن
+disable Two Fa,Disable 2FA Security,Deshabilitar la seguridad de 2FA,تعطيل الأمن 2FA
+fa Enable Alert,Do You Want to Enable 2FA Security?,¿Quieres habilitar la seguridad de 2FA?,هل تريد تمكين 2FA Security؟
+fa Disable Alert,Do You Want to Disable 2FA Security?,¿Quieres deshabilitar la seguridad de 2FA?,هل تريد تعطيل 2FA Security؟
+fa Security Sub Title,We'll ask for a verification code via your security method if we notice a sign in from an unrecognized device or browser. Enable your 2FA Security,Pediremos un código de verificación a través de su método de seguridad si notamos un inicio de sesión desde un dispositivo o navegador no reconocido. Habilite su seguridad de 2FA,سنطلب رمز التحقق عبر طريقة الأمان الخاصة بك إذا لاحظنا تسجيل الدخول من جهاز أو متصفح غير معترف به. تمكين أمان 2FA الخاص بك
+kyc Note,"Allowed documents: jpg, png - 5MB maximum file size.","Documentos permitidos: JPG, PNG - Tamaño de archivo máximo de 5 MB.",المستندات المسموح بها: JPG ، PNG - 5 ميجابايت الحد الأقصى لحجم الملف.
+about Us,About Us,Sobre nosotros,معلومات عنا
+dispute,Dispute,Disputar,ينازع
+request Payment,Request Payment,Solicitar pago,طلب دفع
+enter Amount,Enter Amount,Ingresar la cantidad,أدخل المبلغ
+enter Pin,Insufficient Pin Code Field,Campo de código PIN insuficiente,حقل رمز دبوس غير كاف
+from,From,De,من
+dismiss,Dismiss,Despedir,رفض
+alert,Alert,Alerta,يُحذًِر
+success Snack,Success,Éxito,نجاح
+trx ID,TRX-ID,TRX-ID,trx-id
+transaction Type,Transaction Type,tipo de transacción,نوع المعاملة
+gateway Currency,Gateway Currency,Moneda de puerta de enlace,عملة البوابة
+empty MSG,No Data Found,Datos no encontrados,لاتوجد بيانات
+ongoing,Ongoing,En curso,جاري التنفيذ
+payment Pending,Payment Pending,Pago pendiente,انتظار الدفع
+approval Pending,Approval Pending,Aprobación pendiente,في انتظار الموافقة
+released,Released,Liberado,مطلق سراحه
+Interface Panel,Interface Panel,Panel de interfaz,لوحة واجهة
+active Dispute,Active Disputed,Activo disputado,نشط المتنازع عليها
+refunded,Refunded,Reintegrado,رد
+pdf Viewer,Pdf Viewer,Visor pdf,عارض PDF
+valid User,Valid User,Usuario válido,مستخدم صالح
+invalid User,Invalid User,Usuario invalido,مستخدم غير صالح
+exchange MSG,Cant exchange in same currency.,No puedo cambiar en la misma moneda.,غير قادر على التبادل في نفس العملة.
+forgot Password,Forgot Password?,¿Has olvidado tu contraseña?,هل نسيت كلمة السر؟
+forgot Password Ask,Forgot Password?,¿Has olvidado tu contraseña?,هل نسيت كلمة السر؟
+Profile Settings,Profile Settings,Configuración de perfil,إعدادات الملف الشخصي
+Delete Profile,Delete Profile,Borrar perfil,حذف الملف الشخصي
+User Profile,User Profile,Perfil del usuario,ملف تعريفي للمستخدم
+Enter Username or Email,Enter Username or Email,Ingrese el nombre de usuario o el correo electrónico,أدخل اسم المستخدم أو البريد الإلكتروني
+Current Password,Current Password,Contraseña actual,كلمة السر الحالية
+Login Successfull,Login Successfull,Iniciar sesión exitoso,تسجيل الدخول الناجح
+The credentials does not match,The credentials does not match,Las credenciales no coinciden,لا تتطابق بيانات الاعتماد
+Account Has been Suspended,Account Has been Suspended,Cuenta ha sido suspendida,تم تعليق حسابك
+Hold,Hold,Sostener,يمسك
+success,Success,Éxito,نجاح
+Please check email and verify your account,Please check email and verify your account,Consulte el correo electrónico y verifique su cuenta,يرجى التحقق من البريد الإلكتروني والتحقق من حسابك
+Something went worng! Please try again,Something went worng! Please try again,¡Algo se fue! Inténtalo de nuevo,ذهب شيء يرتديه! حاول مرة اخرى
+Registration successful,Registration successful,Registro exitoso,التسجيل ناجح
+Email varification code resend successfully,Email varification code resend successfully,El código de varificación de correo electrónico reenvía correctamente,إعادة الالتفاف على رمز تباين البريد الإلكتروني بنجاح
+Verification code does not match,Verification code does not match,El código de verificación no coincide,رمز التحقق لا يتطابق
+Email successfully verified,Email successfully verified,Correo electrónico verificado con éxito,تم التحقق من البريد الإلكتروني بنجاح
+KYC information successfully submitted,KYC information successfully submitted,La información de KYC presentó con éxito,تم تقديم معلومات KYC بنجاح
+Your secret key not stored properly. Please contact with system administrator,Your secret key not stored properly. Please contact with system administrator,Su llave secreta no se almacena correctamente. Póngase en contacto con el administrador del sistema,مفتاحك السري لم يتم تخزينه بشكل صحيح. يرجى الاتصال بمسؤول النظام
+Two factor verified successfully!,Two factor verified successfully!,¡Dos factores verificados con éxito!,تم التحقق من عاملان بنجاح!
+Failed to login. Please try again,Failed to login. Please try again,Error al iniciar sesión. Inténtalo de nuevo,فشل في تسجيل الدخول. حاول مرة اخرى
+Logout Successful,Logout Successful,INCOMPTIR SEXITO,سجل النجاح
+User doesn,User doesn,El usuario no,المستخدم لا
+Verification otp code sended to your email,Verification otp code sended to your email,Verificación del código OTP enviado a su correo electrónico,تم إرسال رمز التحقق من OTP إلى بريدك الإلكتروني
+Session expired. Please try again,Session expired. Please try again,Sesión expirada. Inténtalo de nuevo,انتهت الجلسة. حاول مرة اخرى
+OTP verification successful,OTP verification successful,Verificación OTP exitosa,التحقق من OTP ناجح
+Oops password does not match,Oops password does not match,OOPS La contraseña no coincide,عفوًا لا تتطابق كلمة المرور
+Invalid Request. Please try again,Invalid Request. Please try again,Solicitud no válida. Inténtalo de nuevo,طلب غير صالح. حاول مرة اخرى
+Password reset success. Please login with new password,Password reset success. Please login with new password,El éxito de restablecimiento de contraseña. Inicie sesión con una nueva contraseña,إعادة تعيين كلمة المرور النجاح. يرجى تسجيل الدخول بكلمة مرور جديدة
+Add Money Information,Add Money Information,Agregar información sobre dinero,أضف معلومات المال
+Add Money Inserted Successfully,Add Money Inserted Successfully,Agregar dinero insertado con éxito,أضف أموالًا تم إدخالها بنجاح
+Transaction Failed. Record didn\,Transaction Failed. Record didn\,Transacción fallida. Récord no \ no \,فشل الاجراء. سجل لم \
+Request user doesn\,Request user doesn\,Solicitar el usuario no \,طلب المستخدم لا \
+Transaction faild. Record didn\,Transaction faild. Record didn\,Transacción fallida. Récord no \ no \,فشل المعاملة. سجل لم \
+"Payment successful, Please Go Back Your App","Payment successful, Please Go Back Your App","Pago exitoso, vuelva a su aplicación",الدفع ناجحًا ، يرجى العودة إلى تطبيقك
+Added Money Canceled,Added Money Canceled,Dinero agregado cancelado,تم إلغاء الأموال المضافة
+Data fetched successfully,Data fetched successfully,Datos obtenidos con éxito,تم جلب البيانات بنجاح
+Language Data Fetch Successfully!,Language Data Fetch Successfully!,¡Los datos del idioma obtienen con éxito!,جلب بيانات اللغة بنجاح!
+Dashboard data successfully fetch!,Dashboard data successfully fetch!,¡Los datos del tablero obtienen con éxito!,بيانات لوحة القيادة بنجاح!
+Notifications data successfully fetch!,Notifications data successfully fetch!,¡Los datos de notificaciones obtienen con éxito!,بيانات الإخطارات بنجاح!
+Escrow approval pending information,Escrow approval pending information,Aprobación de custodia información pendiente,موافقة الضمان المعلقة
+"Escrow Payment Successful, Please Go Back Your App","Escrow Payment Successful, Please Go Back Your App","Pago de custodia exitoso, vuelva a su aplicación",دفع الضمان ناجح ، يرجى العودة إلى تطبيقك
+Escrow Payment Canceled,Escrow Payment Canceled,Pago de custodia cancelado,تم إلغاء دفع الضمان
+Escrow Conversation Information,Escrow Conversation Information,Información de conversación de custodia,معلومات محادثة الضمان
+Message Sending faild! Please try again,Message Sending faild! Please try again,¡Mensaje enviando fallas! Inténtalo de nuevo,رسالة إرسال فشل! حاول مرة اخرى
+Escrow Message Send Successfully,Escrow Message Send Successfully,Mensaje de custodia Enviar correctamente,إرسال رسالة الضمان بنجاح
+Something went wrong,Something went wrong,Algo salió mal,هناك خطأ ما
+You have request to dispute this escrow successfully,You have request to dispute this escrow successfully,Tiene solicitud para disputar este depósito con éxito,لديك طلب للاعتراض هذا الضمان بنجاح
+You have successfully released the payment,You have successfully released the payment,Has lanzado con éxito el pago,لقد أصدرت الدفع بنجاح
+Email send successfully!,Email send successfully!,¡Envíe el correo electrónico con éxito!,إرسال البريد الإلكتروني بنجاح!
+Escrow Create Failed,Escrow Create Failed,CUPRÓN CREA CREATE FALLO,فشل إنشاء الضمان
+Escrow Create Cancel,Escrow Create Cancel,CUPROW CREATE CANCELAR,الضمان إنشاء إلغاء
+Escrow Information,Escrow Information,Información de depósito,معلومات الضمان
+Escrow Create Data,Escrow Create Data,CUPIRO Crear datos,الضمان إنشاء البيانات
+User not found,User not found,Usuario no encontrado,لم يتم العثور على المستخدم
+Insuficiant Balance,Insuficiant Balance,Equilibrio insuficiente,توازن غير مكيف
+Please follow the escrow limit,Please follow the escrow limit,Siga el límite de depósito,يرجى اتباع حد الضمان
+Insuficiant Balance.Here escrow charge will be substack with your wallet. Your escrow charge is,Insuficiant Balance.Here escrow charge will be substack with your wallet. Your escrow charge is,Balance insuficiente. El cargo de depósito en garantía será unusitivo con su billetera. Su carga de depósito en garantía es,توازن insuficiant. هنا سوف تكون رسوم الضمان بديلة مع محفظتك. رسوم الضمان الخاصة بك
+Opps! Failed to upload attachment. Please try again,Opps! Failed to upload attachment. Please try again,¡Opps! No se pudo cargar el archivo adjunto. Inténtalo de nuevo,أوس! فشل في تحميل المرفق. حاول مرة اخرى
+Escrow Inserted Successfully,Escrow Inserted Successfully,Depósito de custodia insertada con éxito,تم إدخال الضمان بنجاح
+Escrow failed. Record didn\,Escrow failed. Record didn\,Falló el depósito en garantía. Récord no \ no \,فشل الضمان. سجل لم \
+"Escrow created Successful, Please Go Back Your App","Escrow created Successful, Please Go Back Your App","CUPROW creado exitoso, por favor regrese su aplicación",تم إنشاء الضمان الناجح ، يرجى العودة إلى تطبيقك
+"Sorry, your payment information is invalid","Sorry, your payment information is invalid","Lo siento, su información de pago no es válida",آسف ، معلومات الدفع الخاصة بك غير صالحة
+Money Exchange Information,Money Exchange Information,Información de cambio de dinero,معلومات تبادل الأموال
+Exchange money isn\,Exchange money isn\,Intercambio de dinero no \,تبادل المال isn \
+exchange_from_amount,exchange_from_amount,Exchange_from_amount,Exchange_from_amount
+You don\,You don\,Tú no \,أنت لا \
+"Money exchange successful, Please Go Back Your App","Money exchange successful, Please Go Back Your App","Intercambio de dinero exitoso, por favor regrese su aplicación",تبادل الأموال ناجحًا ، يرجى العودة إلى تطبيقك
+Money Out Information!,Money Out Information!,¡Información de dinero!,معلومات المال!
+Invalid Gateway!,Invalid Gateway!,Gateway no válido!,بوابة غير صالحة!
+Currency Not Setup Yet!,Currency Not Setup Yet!,¡La moneda aún no está configurada!,العملة لا الإعداد بعد!
+Please follow the transaction limit,Please follow the transaction limit!,¡Siga el límite de transacción!,يرجى اتباع حد المعاملة!
+Insufficient Balance!,Insufficient Balance!,¡Saldo insuficiente!,توازن غير كاف!
+Money out Inserted Successfully,Money out Inserted Successfully,Dinero fuera insertado con éxito,تم إدخال المال بنجاح
+Something is wrong,Something is wrong!,¡Algo está mal!,هناك شئ غير صحيح!
+"Invalid request, it is not manual gateway request","Invalid request, it is not manual gateway request","Solicitud no válida, no es una solicitud de puerta de enlace manual",طلب غير صالح ، إنه ليس طلب بوابة يدوي
+Money out request send to admin successfully,Money out request send to admin successfully,Solicitud de dinero de dinero enviar al administrador correctamente,طلب المال خارج الإرسال إلى المسؤول بنجاح
+Profile successfully updated!,Profile successfully updated!,Perfil actualizado con éxito!,تم تحديث الملف الشخصي بنجاح!
+Current password didn\,Current password didn\,La contraseña actual no \,كلمة المرور الحالية لم تفعل \
+Password updated successfully!,Password updated successfully!,¡Contraseña actualizada exitosamente!,تم تحديث كلمة السر بنجاح!
+Something went wrong! Please try again,Something went wrong! Please try again!,¡Algo salió mal! ¡Inténtalo de nuevo!,هناك خطأ ما! حاول مرة اخرى!
+User deleted successfull,User deleted successfull,Usuario eliminado exitoso,حذف المستخدم الناجح
+Don,Don,Don,اِتَّشَح
+t login to your account,t login to your account,Tije iniciar sesión en su cuenta,T تسجيل الدخول إلى حسابك
+Data fetch Successfully,Data fetch Successfully,Los datos obtienen con éxito,جلب البيانات بنجاح
+Google 2FA Updated Successfully!,Google 2FA Updated Successfully!,Google 2FA actualizado con éxito!,تم تحديث Google 2FA بنجاح!
+Your profile type updated successfully,Your profile type updated successfully,Su tipo de perfil actualizado correctamente,تم تحديث نوع ملف التعريف الخاص بك بنجاح
+user.password.forgot.code.verify.form,user.password.forgot.code.verify.form,user.password.forgot.code.verify.form,user.password.forgot.code.verify.form
+Varification code sended to your email address,Varification code sended to your email address,Código de varificación enviado a su dirección de correo electrónico,تم إرسال رمز التباين إلى عنوان بريدك الإلكتروني
+Approve,Approve,Aprobar,يعتمد
+Reject,Reject,Rechazar,يرفض
+user.password.forgot,user.password.forgot,user.password.forgot,user.password.forgot
+Password Reset Token Expired,Password Reset Token Expired,El token de restablecimiento de contraseña expiró,انتهت صلاحية رمز إعادة تعيين كلمة المرور
+Varification code resend success!,Varification code resend success!,¡El código de varificación reenvía el éxito!,رمز التباين إعادة تقديم النجاح!
+user.authorize.kyc,user.authorize.kyc,user.authorize.kyc,user.authorize.kyc
+Please submit kyc information,Please submit kyc information,Envíe la información de KYC,يرجى تقديم معلومات KYC
+Please wait before admin approved your kyc information,Please wait before admin approved your kyc information,Espere antes de que el administrador aprobara su información de KYC,يرجى الانتظار قبل موافقة المسؤول على معلومات KYC الخاصة بك
+Admin rejected your kyc information,Admin rejected your kyc information,Admin rechazó su información de KYC,رفض المسؤول معلومات KYC الخاصة بك
+user.add.money.index,user.add.money.index,user.add.money.index,user.add.money.index
+Successfully added money,Successfully added money,Dinero agregado con éxito,أضافت الأموال بنجاح
+You have canceled the payment,You have canceled the payment,Has cancelado el pago,لقد ألغت الدفع
+Add money cancelled,Add money cancelled,Agregar dinero cancelado,أضف المال الملغى
+Transaction failed,Transaction failed,Transacción fallida,فشل الاجراء
+Added Money Failed,Added Money Failed,El dinero agregado falló,فشل الأموال المضافة
+Add Money Failed,Add Money Failed,Agregar dinero fallido,فشل إضافة المال
+Add Money Canceled,Add Money Canceled,Agregar dinero cancelado,أضف المال الملغى
+Account successfully verified,Account successfully verified,Cuenta verificada con éxito,الحساب تم التحقق منه بنجاح
+Request token is invalid,Request token is invalid,El token de solicitud no es válido,الرمز المميز غير صالح
+user.authorize.mail,user.authorize.mail,user.authorize.mail,user.authorize.mail
+You are already KYC Verified User,You are already KYC Verified User,Ya eres usuario verificado de KYC,أنت بالفعل مستخدم تم التحقق منه KYC
+warning,warning,advertencia,تحذير
+Faild to login. Please try again,Faild to login. Please try again,No se inicia sesión. Inténtalo de nuevo,فشل في تسجيل الدخول. حاول مرة اخرى
+index,index,índice,فِهرِس
+Your profile deleted successfully!,Your profile deleted successfully!,¡Tu perfil se eliminó con éxito!,تم حذف ملف التعريف الخاص بك بنجاح!
+Notifications seen successfully!,Notifications seen successfully!,¡Notificaciones vistas con éxito!,الإخطارات التي شوهدت بنجاح!
+Payment gateway not found,Payment gateway not found,Pase de entrada no encontrada,لم يتم العثور على بوابة الدفع
+user.my-escrow.index,user.my-escrow.index,user.my-escrow.index,user.my-escrow.index
+Payment successfully completed,Payment successfully completed,Pago completado con éxito,مكتمل الدفع بنجاح
+Payment Canceled,Payment Canceled,Pago cancelado,تم إلغاء الدفع
+This escrow is closed,This escrow is closed,Este depósito está cerrado,هذا الضمان مغلق
+SMS Sending faild! Please try again,SMS Sending faild! Please try again,¡SMS enviando fallas! Inténtalo de nuevo,الرسائل القصيرة إرسال فشل! حاول مرة اخرى
+File Uploaded Success,File Uploaded Success,Éxito cargado de archivos,ملف تم تحميله النجاح
+Seller Wallet not found,Seller Wallet not found,Billetera del vendedor no encontrada,لم يتم العثور على محفظة البائع
+You have successfully released payment,You have successfully released payment,Ha publicado con éxito el pago,لقد أصدرت الدفع بنجاح
+Escrow created successfully,Escrow created successfully,Depósito en garantía creado con éxito,تم إنشاء الضمان بنجاح
+flutterWave,flutterWave,flutterwave,Flutterwave
+You have cancelled the payment,You have cancelled the payment,Has cancelado el pago,لقد ألغت الدفع
+Password successfully updated!,Password successfully updated!,Contraseña actualizada correctamente!,تم تحديث كلمة المرور بنجاح!
+Security Setting Updated Successfully!,Security Setting Updated Successfully!,Configuración de seguridad actualizada con éxito!,تم تحديث إعداد الأمان بنجاح!
+Support ticket created successfully!,Support ticket created successfully!,¡Ticket de apoyo creado con éxito!,تذكرة الدعم التي تم إنشاؤها بنجاح!
+This support ticket is closed,This support ticket is closed,Este boleto de soporte está cerrado,تذكرة الدعم هذه مغلقة
+Can\'t change anything for demo application,Can\'t change anything for demo application,¿No puede cambiar cualquier cosa para la aplicación de demostración?,لا يمكن تغيير أي شيء للتطبيق التجريبي
+"Don't forget to add this application in your google authentication app. Otherwise, you can't login to your account","Don't forget to add this application in your google authentication app. Otherwise, you can't login to your account","No olvide agregar esta aplicación en su aplicación de autenticación de Google. De lo contrario, no puede iniciar sesión en su cuenta",لا تنس إضافة هذا التطبيق في تطبيق مصادقة Google الخاص بك. خلاف ذلك ، لا يمكنك تسجيل الدخول إلى حسابك
+Google Authenticator is a product based authenticator by Google that executes two-venture confirmation administrations for verifying clients of any programming applications,Google Authenticator is a product based authenticator by Google that executes two-venture confirmation administrations for verifying clients of any programming applications,Google Authenticator es un autenticador basado en productos de Google que ejecuta administraciones de confirmación de dos ventas para verificar a los clientes de cualquier aplicación de programación,Google Authenticator هو مصادقة قائمة على المنتج من قبل Google والتي تنفذ إدارات تأكيد ثنائية المشاريع للتحقق من العملاء من أي تطبيقات برمجة
+How to setup,How to setup,Como instalar,كيفيه التنصيب
+Download For Android,Download For Android,Descargar para Android,تحميل لنظام Android
+Download For IOS,Download For IOS,Descargar para iOS,تنزيل لنظام التشغيل iOS
+These credentials do not match our records,These credentials do not match our records,Estas credenciales no coinciden con nuestros registros,لا تتطابق بيانات الاعتماد هذه سجلاتنا
