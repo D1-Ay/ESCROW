@@ -84,12 +84,15 @@
                                 <select class="form--control payment_gateway" name="payment_gateway">
                                     <option value="myWallet" class="my_wallet_balance">My Wallet : 0.000 USD</option>
                                     @foreach ($payment_gateways_currencies as $item)
+                                    @if ($item->currency_code == 'MAD')
                                     <option value="{{ $item->id }}">
+                                        {{$item}}
                                         {{ $item->name}}
                                         @if ($item->gateway->type == payment_gateway_const()::MANUAL)
                                             {{ "(Manual)" }}
                                         @endif
                                     </option>
+                                    @endif
                                     @endforeach 
                                 </select>
                             </div>

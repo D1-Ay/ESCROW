@@ -30,7 +30,7 @@ class FileController extends Controller
             $file_holder_files = $validated['fileholder_files'];
             $file_ext = $file_holder_files->getClientOriginalExtension();
             $file_store_name = Str::uuid() . "." . $file_ext;
-            $data['path']   = asset('public/fileholder/img/');
+            $data['path']   = asset('/fileholder/img/');
             $data['file_name']  =  $file_store_name;
             $data['file_link']  = $data['path'] . "/" . $data['file_name'];
             $data['file_type']  = $file_holder_files->getClientMimeType();

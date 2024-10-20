@@ -8,22 +8,22 @@
     <div class="four-not-four-section">
         <div class="four-not-four-wrapper">
             <div class="four-not-four-thumb">
-            <img src="{{ asset("public/error-images/404.png") }}" alt="404" class="error">
-            <img src="{{ asset("public/error-images/500-(Server-Error).png") }}" alt="500" class="error-bg">
+            <img src="{{ asset("/error-images/404.png") }}" alt="404" class="error">
+            <img src="{{ asset("/error-images/500-(Server-Error).png") }}" alt="500" class="error-bg">
                 <div class="four-not-four-element-one">
-                    <img src="{{ asset("public/error-images/5.png") }}" alt="five">
+                    <img src="{{ asset("/error-images/5.png") }}" alt="five">
                 </div>
                 <div class="four-not-four-element-two">
-                    <img src="{{ asset("public/error-images/0.png") }}" alt="zero">
+                    <img src="{{ asset("/error-images/0.png") }}" alt="zero">
                 </div>
                 <div class="four-not-four-element-three">
-                    <img src="{{ asset("public/error-images/socket.png") }}" alt="socket">
+                    <img src="{{ asset("/error-images/socket.png") }}" alt="socket">
                 </div>
                 <div class="four-not-four-element-four">
-                    <img src="{{ asset("public/error-images/electric-socket.png") }}" alt="electric-socket">
+                    <img src="{{ asset("/error-images/electric-socket.png") }}" alt="electric-socket">
                 </div>
                 <div class="four-not-four-element-five">
-                    <img src="{{ asset("public/error-images/tester.png") }}" alt="tester">
+                    <img src="{{ asset("/error-images/tester.png") }}" alt="tester">
                 </div>
                 <div class="four-not-four-element-six">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
