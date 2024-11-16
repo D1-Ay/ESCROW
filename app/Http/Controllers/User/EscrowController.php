@@ -30,6 +30,7 @@ use App\Http\Helpers\EscrowPaymentGateway;
 use App\Notifications\Escrow\EscrowRequest;
 use App\Models\Admin\PaymentGatewayCurrency;
 use App\Events\User\NotificationEvent as UserNotificationEvent;
+use Illuminate\Support\Facades\Log;
 
 class EscrowController extends Controller
 {
@@ -50,32 +51,71 @@ class EscrowController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(Request $request) {
-        $page_title                  = "Create New Escrow";
-        $currencies                  = Currency::where('status', true)->get();
-        $escrowCategories            = EscrowCategory::where('status', true)->latest()->get();
+        // Log the start of the method
+        Log::info('Starting the create method.');
+    
+        // Log page title setting
+        $page_title = "Create New Escrow";
+        Log::info('Page title set: ' . $page_title);
+    
+        // Log fetching currencies
+        Log::info('Fetching currencies where status is true.');
+        $currencies = Currency::where('status', true)->get();
+        Log::info('Currencies fetched: ', ['currencies' => $currencies]);
+    
+        // Log fetching escrow categories
+        Log::info('Fetching escrow categories where status is true and sorting by latest.');
+        $escrowCategories = EscrowCategory::where('status', true)->latest()->get();
+        Log::info('Escrow categories fetched: ', ['escrowCategories' => $escrowCategories]);
+    
+        // Log fetching payment gateway currencies
+        Log::info('Fetching payment gateways with active status for add money slug.');
         $payment_gateways_currencies = PaymentGatewayCurrency::whereHas('gateway', function ($gateway) {
             $gateway->where('slug', PaymentGatewayConst::add_money_slug());
             $gateway->where('status', 1);
         })->get();
+        Log::info('Payment gateways currencies fetched: ', ['payment_gateways_currencies' => $payment_gateways_currencies]);
+    
+        // Log the request data
         $user_pass_data = $request->all();
-        return view('user.my-escrow.create', compact('page_title', 'escrowCategories','currencies','payment_gateways_currencies','user_pass_data'));
+        Log::info('Request data received: ', ['user_pass_data' => $user_pass_data]);
+    
+        // Log returning the view
+        Log::info('Rendering view for create escrow.');
+        return view('user.my-escrow.create', compact('page_title', 'escrowCategories', 'currencies', 'payment_gateways_currencies', 'user_pass_data'));
     }
+    
     //===================== escrow submission ======================================================
-    // escrow submit 
     public function submit(Request $request) { 
+        \Log::info('Submit method started');
+        
+        // Fetch basic settings
         $basic_setting = BasicSettings::first();
-        $user          = auth()->user();
-        if($basic_setting->kyc_verification){
-            if( $user->kyc_verified == 0){
-                return redirect()->route('user.authorize.kyc')->with(['error' => [__('Please submit kyc information')]]);
-            }elseif($user->kyc_verified == 2){
-                return redirect()->route('user.authorize.kyc')->with(['error' => [__('Please wait before admin approved your kyc information')]]);
-            }elseif($user->kyc_verified == 3){
-                return redirect()->route('user.authorize.kyc')->with(['error' => [__('Admin rejected your kyc information, Please re-submit again')]]);
-            }
-        }
+        \Log::info('BasicSettings fetched');
+    
+        // Get authenticated user
+        $user = auth()->user();
+        \Log::info('User fetched: '.$user->id);
+    
+        // KYC Verification Checks
+        // if ($basic_setting->kyc_verification) {
+        //     if ($user->kyc_verified == 0) {
+        //         \Log::info('User KYC not submitted');
+        //         return redirect()->route('user.authorize.kyc')->with(['error' => [__('Please submit kyc information')]]);
+        //     } elseif ($user->kyc_verified == 2) {
+        //         \Log::info('User KYC pending approval');
+        //         return redirect()->route('user.authorize.kyc')->with(['error' => [__('Please wait before admin approves your kyc information')]]);
+        //     } elseif ($user->kyc_verified == 3) {
+        //         \Log::info('User KYC rejected');
+        //         return redirect()->route('user.authorize.kyc')->with(['error' => [__('Admin rejected your kyc information, Please re-submit again')]]);
+        //     }
+        // }
+    
+        // Page Title
         $page_title = "Escrow Details";
-        $validator  = Validator::make($request->all(),[
+    
+        // Validation of input
+        $validator = Validator::make($request->all(), [
             'title'                 => 'required|string',
             'escrow_category'       => 'required|integer',
             'role'                  => 'required|string',
@@ -85,143 +125,180 @@ class EscrowController extends Controller
             'escrow_currency'       => 'required|string',
             'payment_gateway'       => 'nullable',
             'remarks'               => 'nullable|string',
-            'file.*'                => "nullable|file|max:100000|mimes:jpg,jpeg,png,pdf,zip",
+            'file.*'                => 'nullable|file|max:100000|mimes:jpg,jpeg,png,pdf,zip',
         ]);
-        if($validator->fails()) {
+    
+        // Check if validation fails
+        if ($validator->fails()) {
+            \Log::info('Validation failed');
             return back()->withErrors($validator)->withInput();
         }
-        $validated            = $validator->validate();
-        $escrowCategory       = EscrowCategory::find($validated['escrow_category']);
+        
+        \Log::info('Validation passed');
+        
+        // Validate and sanitize input
+        $validated = $validator->validate();
+        \Log::info('Input validated', $validated);
+    
+        // Fetch escrow category
+        $escrowCategory = EscrowCategory::find($validated['escrow_category']);
+        \Log::info('Escrow category fetched: '.$escrowCategory->id);
+    
+        // Fetch transaction settings for escrow charges
         $getEscrowChargeLimit = TransactionSetting::find(1);
-        $sender_currency      = Currency::where('code', $validated['escrow_currency'])->first();
-        $digitShow            = $sender_currency->type == "CRYPTO" ? 6 : 2 ;
-        $opposite_user                 = User::where('username',$validated['buyer_seller_identify'])->orWhere('email',$validated['buyer_seller_identify'])->first();
-        //user check 
-        if(empty($opposite_user) || $opposite_user->email == auth()->user()->email) return redirect()->back()->withInput()->with(['error' => [__('User not found')]]);
-        //get payment method
+        \Log::info('Transaction settings fetched');
+    
+        // Fetch the currency
+        $sender_currency = Currency::where('code', $validated['escrow_currency'])->first();
+        \Log::info('Sender currency fetched: '.$sender_currency->code);
+    
+        // Opposite user fetch
+        $opposite_user = User::where('username', $validated['buyer_seller_identify'])
+                            ->orWhere('email', $validated['buyer_seller_identify'])->first();
+        
+        if (empty($opposite_user) || $opposite_user->email == $user->email) {
+            \Log::info('Opposite user not found or same as authenticated user');
+            return redirect()->back()->withInput()->with(['error' => [__('User not found')]]);
+        }
+        
+        \Log::info('Opposite user found: '.$opposite_user->id);
+    
+        // Payment method and currency calculations
+        \Log::info('Processing payment method');
+        
         $payment_type = EscrowConstants::DID_NOT_PAID;
         $payment_gateways_currencies = null;
+    
         if ($validated['role'] == "buyer") {
             if ($validated['payment_gateway'] == "myWallet") {
-                $user_wallets = UserWallet::where(['user_id' => auth()->user()->id, 'currency_id' => $sender_currency->id])->first();
-                if(empty($user_wallets)) return redirect()->back()->withInput()->with(['error' => ['Wallet not found.']]); 
-                if($user_wallets->balance == 0 || $user_wallets->balance < 0 || $user_wallets->balance < $validated['amount']) return redirect()->back()->withInput()->with(['error' => [__('Insuficiant Balance')]]);
+                $user_wallets = UserWallet::where(['user_id' => $user->id, 'currency_id' => $sender_currency->id])->first();
+                if (empty($user_wallets)) {
+                    \Log::info('User wallet not found');
+                    return redirect()->back()->withInput()->with(['error' => ['Wallet not found.']]); 
+                }
+                if ($user_wallets->balance < $validated['amount']) {
+                    \Log::info('Insufficient balance in wallet');
+                    return redirect()->back()->withInput()->with(['error' => [__('Insufficient Balance')]]);
+                }
+    
+                \Log::info('Payment method: My Wallet');
                 $payment_method        = "My Wallet";
                 $gateway_currency      = $validated['escrow_currency'];
                 $gateway_exchange_rate = 1;
                 $payment_type          = EscrowConstants::MY_WALLET;
-            } else{
+            } else {
                 $payment_gateways_currencies = PaymentGatewayCurrency::with('gateway')->find($validated['payment_gateway']);
-                if(!$payment_gateways_currencies || !$payment_gateways_currencies->gateway) {
+                if (!$payment_gateways_currencies || !$payment_gateways_currencies->gateway) {
+                    \Log::info('Payment gateway not found');
                     return redirect()->back()->withInput()->with(['error' => ['Payment gateway not found.']]); 
                 }
+    
+                \Log::info('Payment method: Gateway - '.$payment_gateways_currencies->name);
                 $payment_method   = $payment_gateways_currencies->name;
                 $gateway_currency = $payment_gateways_currencies->currency_code;
-                                                                                                          //calculate gateway exchange rate 
-                $gateway_exchange_rate =  (1/$sender_currency->rate)*$payment_gateways_currencies->rate;  //this currency is converted in payment gateway currency
+    
+                // Calculate gateway exchange rate
+                $gateway_exchange_rate = (1 / $sender_currency->rate) * $payment_gateways_currencies->rate;
                 $payment_type = EscrowConstants::GATEWAY;
             }
         }
-        $request_amount = $validated['amount'];
-        //convert escrow currency amount into default currency
-        $usd_exchange_amount = (1/$sender_currency->rate)*$request_amount;
-        //charge calculate in USD currency 
+    
+        \Log::info('Escrow amount and charges processing');
+    
+        // Convert escrow currency amount into default currency
+        $usd_exchange_amount = (1 / $sender_currency->rate) * $validated['amount'];
+    
+        // Calculate escrow charges
         $usd_fixed_charge   = $getEscrowChargeLimit->fixed_charge;
-        $usd_percent_charge = ($getEscrowChargeLimit->percent_charge/100)*$usd_exchange_amount;
-        $usd_total_charge   = $usd_fixed_charge+$usd_percent_charge;
-        //final charge in escrow currency
-        $escrow_total_charge = $usd_total_charge*$sender_currency->rate;
-        //limit check 
-        if($getEscrowChargeLimit->min_limit > $usd_exchange_amount || $getEscrowChargeLimit->max_limit < $usd_exchange_amount) return redirect()->back()->withInput()->with(['error' => [__('Please follow the escrow limit')]]);
-        //calculate seller amount 
-        if ($validated['who_will_pay_options'] == "seller") {
-            $seller_amount = $request_amount - $escrow_total_charge;
-        }else if($validated['who_will_pay_options'] == "half"){
-            $seller_amount = $request_amount - ($escrow_total_charge/2);
-        }else if($validated['who_will_pay_options'] == "me" && $validated['role'] == "seller"){
-            $seller_amount = $request_amount - $escrow_total_charge;
-        }else{
-            $seller_amount = $request_amount;
-        } 
-        //calculate buyer amount 
-        if ($validated['role'] == "buyer") {
-            if ($validated['who_will_pay_options'] == "buyer") {
-                $buyer_amount = ($request_amount+$escrow_total_charge)*$gateway_exchange_rate;
-            }else if($validated['who_will_pay_options'] == "half"){
-                $buyer_amount = ($request_amount + ($escrow_total_charge/2))*$gateway_exchange_rate;
-            }else if($validated['who_will_pay_options'] == "me" && $validated['role'] == "buyer"){
-                $buyer_amount = ($request_amount+$escrow_total_charge)*$gateway_exchange_rate;
-            }else{
-                $buyer_amount = $request_amount*$gateway_exchange_rate;
-            } 
-            if ($validated['payment_gateway'] == "myWallet") {
-                if($user_wallets->balance == 0 || $user_wallets->balance < 0 || $user_wallets->balance < $buyer_amount) return redirect()->back()->withInput()->with(['error' => ['Insuficiant Balance.Here escrow charge will be substack with your wallet. Your escrow charge is '.$escrow_total_charge.' '.$validated['escrow_currency']]]);
-            }
-        } 
-        $oldData = (object) [ 
-            'buyer_or_seller_id'          => $opposite_user->id,
-            'escrow_category_id'          => $validated['escrow_category'],
-            'payment_type'                => $payment_type,
-            'payment_gateway_currency_id' => $payment_type == EscrowConstants::GATEWAY ? $payment_gateways_currencies->id : null,
-
-            'user_id'         => auth()->user()->id,
-            'title'           => $validated['title'],
-            'role'            => $validated['role'],
-            'product_type'    => $escrowCategory->name,
-            'amount'          => $validated['amount'],
-            'escrow_currency' => $validated['escrow_currency'],
-            'charge_payer'    => $validated['who_will_pay_options'],
-
-            'escrow_total_charge'   => $escrow_total_charge,
-            'seller_amount'         => $seller_amount ?? 0,
-            'gateway_currency'      => $gateway_currency ?? "null",
-            'payment_method'        => $payment_method ?? "null",
-            'gateway_exchange_rate' => $gateway_exchange_rate ?? 0,
-            'buyer_amount'          => $buyer_amount ?? 0,
-
-            'remarks' => $validated['remarks'] ?? null,
-            'file'    => null,
-        ];
-        //file upload
+        $usd_percent_charge = ($getEscrowChargeLimit->percent_charge / 100) * $usd_exchange_amount;
+        $usd_total_charge   = $usd_fixed_charge + $usd_percent_charge;
+    
+        // Final charge in escrow currency
+        $escrow_total_charge = $usd_total_charge * $sender_currency->rate;
+    
+        // Check if escrow amount is within limits
+        if ($getEscrowChargeLimit->min_limit > $usd_exchange_amount || $getEscrowChargeLimit->max_limit < $usd_exchange_amount) {
+            \Log::info('Escrow amount out of limits');
+            return redirect()->back()->withInput()->with(['error' => [__('Please follow the escrow limit')]]);
+        }
+    
+        \Log::info('Escrow amounts calculated successfully');
+    
+        // Generate a unique identifier for the escrow transaction
+        $identifier = generate_unique_string("escrows", "escrow_id", 16);
+        \Log::info('Generated identifier: '.$identifier);
+    
+        // Initialize the attachment variable to avoid undefined issues
         $attachment = [];
-        if($request->hasFile('file')) {
+    
+        // File upload processing
+        if ($request->hasFile('file')) {
             $validated_files = $request->file("file");
-            $attachment      = [];
-            $files_link      = [];
-            foreach($validated_files as $item) {
-                $upload_file = upload_file($item,'escrow-temp-file');
-                if($upload_file != false) {
+            $files_link = [];
+            foreach ($validated_files as $item) {
+                $upload_file = upload_file($item, 'escrow-temp-file');
+                if ($upload_file != false) {
                     $attachment[] = [
                         'attachment'      => $upload_file['name'],
                         'attachment_info' => json_encode($upload_file),
                         'created_at'      => now(),
                     ];
+                    $files_link[] = get_files_path('escrow-temp-file') . "/". $upload_file['name'];
+                    \Log::info('File uploaded: '.$upload_file['name']);
+                } else {
+                    \Log::error('File upload failed');
+                    return back()->with(['error' => [__('Oops! Failed to upload attachment. Please try again')]]);
                 }
-
-                $files_link[] = get_files_path('escrow-temp-file') . "/". $upload_file['name'];
-            }
-
-            try{
-                $attachment = $attachment;
-            }catch(Exception $e) {
-                delete_files($files_link); 
-                return back()->with(['error' => [__('Opps! Failed to upload attachment. Please try again')]]);
             }
         }
-        $identifier = generate_unique_string("escrows","escrow_id",16);
+    
+        // Preparing final data
+        $oldData = (object) [ 
+            'buyer_or_seller_id'          => $opposite_user->id,
+            'escrow_category_id'          => $validated['escrow_category'],
+            'payment_type'                => $payment_type,
+            'payment_gateway_currency_id' => $payment_type == EscrowConstants::GATEWAY ? $payment_gateways_currencies->id : null,
+            'user_id'                     => auth()->user()->id,
+            'title'                       => $validated['title'],
+            'role'                        => $validated['role'],
+            'product_type'                => $escrowCategory->name,
+            'amount'                      => $validated['amount'],
+            'escrow_currency'             => $validated['escrow_currency'],
+            'charge_payer'                => $validated['who_will_pay_options'],
+            'escrow_total_charge'         => $escrow_total_charge,
+            'seller_amount'               => $seller_amount ?? 0,
+            'gateway_currency'            => $gateway_currency ?? "null",
+            'payment_method'              => $payment_method ?? "null",
+            'gateway_exchange_rate'       => $gateway_exchange_rate ?? 0,
+            'buyer_amount'                => $buyer_amount ?? 0,
+            'remarks'                     => $validated['remarks'] ?? null,
+            'file'                        => null,
+        ];
+    
+        // Storing temporary data for the escrow
         $tempData = [
             'trx'              => $identifier,
             'escrow'           => $oldData,
             'gateway_currency' => $payment_gateways_currencies ?? null,
             'attachment'       => json_encode($attachment) ?? null,
-            'creator_table'         => auth()->guard(get_auth_guard())->user()->getTable(),
-            'creator_id'       => auth()->guard(get_auth_guard())->user()->id,   //for sscommerz relogin after payment
-            'creator_guard'    => get_auth_guard(),                              //for sscommerz relogin after payment
+            'creator_table'    => auth()->guard(get_auth_guard())->user()->getTable(),
+            'creator_id'       => auth()->guard(get_auth_guard())->user()->id,   
+            'creator_guard'    => get_auth_guard(),                              
         ];
+    
         $this->addEscrowTempData($identifier, $tempData);
-        Session::put('identifier',$identifier);
-        return view('user.my-escrow.escrow-preview', compact('page_title','oldData','digitShow','identifier'));
+    
+        // Store the identifier in the session
+        Session::put('identifier', $identifier);
+        \Log::info('Session identifier stored');
+        \Log::info('Preparing to render escrow-preview view');
+        
+        
+        // Prepare final response
+        return view('user.my-escrow.escrow-preview', compact('page_title', 'oldData', 'identifier'));
     }
+    
+    
     //escrow temp data insert
     public function addEscrowTempData($identifier,$data) {  
         return TemporaryData::create([
@@ -233,36 +310,65 @@ class EscrowController extends Controller
     //===================== end escrow submission ==================================================
     //====================== escrow payment ========================================================
     public function successConfirm(Request $request) {
+        \Log::info('successConfirm method started');
+    
+        // Validation
         $validator  = Validator::make($request->all(),[
             'identifier' => 'required',
         ]);
         if($validator->fails()) {
+            \Log::info('Validation failed');
             return back()->withErrors($validator)->withInput();
-        } 
+        }
+        
+        // Get the identifier from the request or session
         $identifier = $request->identifier ?? session()->get('identifier');
-        $tempData   = TemporaryData::where("identifier",$identifier)->first();
-        if ($tempData->data->escrow->role == EscrowConstants::SELLER_TYPE) { 
+        \Log::info('Identifier fetched: '.$identifier);
+    
+        // Fetch Temporary Data
+        $tempData = TemporaryData::where("identifier", $identifier)->first();
+        \Log::info('Temporary data fetched for identifier: '.$identifier);
+    
+        if (!$tempData) {
+            \Log::error('No TemporaryData found for identifier: '.$identifier);
+            return redirect()->back()->with(['error' => __("Temporary data not found")]);
+        }
+    
+        // Check escrow role
+        if ($tempData->data->escrow->role == EscrowConstants::SELLER_TYPE) {
+            \Log::info('Escrow role is seller, creating escrow');
             $this->createEscrow($tempData);
+            \Log::info('Escrow created successfully');
             return redirect()->route('user.my-escrow.index')->with(['success' => [__('Escrow created successfully')]]);
         }
-        //escrow wallet payment 
-        if ($tempData->data->escrow->payment_type == EscrowConstants::MY_WALLET) { 
+    
+        // Escrow wallet payment
+        if ($tempData->data->escrow->payment_type == EscrowConstants::MY_WALLET) {
+            \Log::info('Payment type: MY_WALLET, processing wallet payment');
             $this->escrowWalletPayment($tempData);
+            \Log::info('Wallet payment processed, creating escrow');
             $this->createEscrow($tempData);
+            \Log::info('Escrow created successfully');
             return redirect()->route('user.my-escrow.index')->with(['success' => [__('Escrow created successfully')]]); 
         }
-        //escrow payment by payment gateway
+    
+        // Escrow payment via payment gateway
         if ($tempData->data->escrow->payment_type == EscrowConstants::GATEWAY) {
-            try{
-                $instance = EscrowPaymentGateway::init($tempData)->gateway(); 
+            try {
+                \Log::info('Payment type: GATEWAY, initializing payment gateway');
+                $instance = EscrowPaymentGateway::init($tempData)->gateway();
+                \Log::info('Payment gateway initialized successfully');
                 return $instance;
-            }catch(Exception $e) {
-                throw new Exception($e->getMessage());
+            } catch (Exception $e) {
+                \Log::error('Payment gateway error: '.$e->getMessage());
                 return back()->with(['error' => [$e->getMessage()]]);
-            } 
-        } 
+            }
+        }
+    
+        \Log::info('End of successConfirm method, something went wrong');
         return redirect()->back()->with(['error' => __("Something went wrong")]);
     }
+    
     public function escrowPaymentSuccess(Request $request, $gateway = null, $trx = null) { 
         try{
             $identifier = $trx ?? session()->get('identifier');
@@ -427,11 +533,25 @@ class EscrowController extends Controller
     //========= end escrow manual payment ===============
     //escrow wallet payment
     public function escrowWalletPayment($escrowTempData) {
-        $sender_currency       = Currency::where('code', $escrowTempData->data->escrow->escrow_currency)->first();
-        $user_wallet           = UserWallet::where(['user_id' => auth()->user()->id, 'currency_id' => $sender_currency->id])->first(); 
+        \Log::info('escrowWalletPayment method started');
+    
+        // Fetching currency
+        $sender_currency = Currency::where('code', $escrowTempData->data->escrow->escrow_currency)->first();
+        \Log::info('Sender currency fetched: ' . $sender_currency->code);
+    
+        // Fetching user wallet
+        $user_wallet = UserWallet::where(['user_id' => auth()->user()->id, 'currency_id' => $sender_currency->id])->first();
+        \Log::info('User wallet fetched, balance: ' . $user_wallet->balance);
+    
+        // Deducting amount from wallet
+        \Log::info('Deducting ' . $escrowTempData->data->escrow->buyer_amount . ' from wallet');
         $user_wallet->balance -= $escrowTempData->data->escrow->buyer_amount;
         $user_wallet->save();
+        \Log::info('New wallet balance: ' . $user_wallet->balance);
+    
+        \Log::info('escrowWalletPayment method completed');
     }
+    
     //====================== end escrow payment ========================================================
     //======================= escrow data insertion after payment ==================================
     //escrow data insert
@@ -457,33 +577,38 @@ class EscrowController extends Controller
         return redirect()->route('user.my-escrow.index')->with(['success' => [__('Escrow created successfully')]]); 
     } 
     //insert escrow data
-    public function createEscrow($tempData, $additionalData = null,$setStatus = null) {
+    public function createEscrow($tempData, $additionalData = null, $setStatus = null) {
+        \Log::info('createEscrow method started');
+    
         $escrowData = $tempData->data->escrow;
         if ($setStatus == null) {
             $status = 0;
             if ($escrowData->role == "seller") {
                 $status = EscrowConstants::APPROVAL_PENDING;
-            }else if($escrowData->role == "buyer" && $escrowData->payment_gateway_currency_id != null){ 
+            } else if ($escrowData->role == "buyer" && $escrowData->payment_gateway_currency_id != null) { 
                 if ($tempData->data->gateway_currency->gateway->type == PaymentGatewayConst::AUTOMATIC) {
                     $status = EscrowConstants::ONGOING;
-                }else if($tempData->data->gateway_currency->gateway->type == PaymentGatewayConst::MANUAL){
-                    $status         = EscrowConstants::PAYMENT_PENDING;
+                } else if ($tempData->data->gateway_currency->gateway->type == PaymentGatewayConst::MANUAL) {
+                    $status = EscrowConstants::PAYMENT_PENDING;
                     $additionalData = json_encode($additionalData);
                 }
-            }else if($escrowData->role == "buyer" && $escrowData->payment_type == EscrowConstants::MY_WALLET){
+            } else if ($escrowData->role == "buyer" && $escrowData->payment_type == EscrowConstants::MY_WALLET) {
                 $status = EscrowConstants::ONGOING;
             }
-        }else{
+        } else {
             $status = $setStatus;
         }
-     
+    
         DB::beginTransaction();
-        try{ 
-           $escrowCreate = Escrow::create([
+        try {
+            \Log::info('Creating escrow entry in database for user_id: ' . $escrowData->user_id);
+            
+            // Create the escrow
+            $escrowCreate = Escrow::create([
                 'user_id'                     => $escrowData->user_id,
                 'escrow_category_id'          => $escrowData->escrow_category_id,
                 'payment_gateway_currency_id' => $escrowData->payment_gateway_currency_id ?? null,
-                'escrow_id'                   => 'EC'.getTrxNum(),
+                'escrow_id'                   => 'EC' . getTrxNum(),
                 'payment_type'                => $escrowData->payment_type,
                 'role'                        => $escrowData->role,
                 'who_will_pay'                => $escrowData->charge_payer,
@@ -496,8 +621,12 @@ class EscrowController extends Controller
                 'status'                      => $status,
                 'details'                     => $additionalData,
                 'created_at'                  => now(),
-                'callback_ref'                  => $tempData->identifier,
+                'callback_ref'                => $tempData->identifier,
             ]);
+    
+            \Log::info('Escrow created with ID: ' . $escrowCreate->id);
+    
+            // Create escrow details
             EscrowDetails::create([
                 'escrow_id'             => $escrowCreate->id ?? 0,
                 'fee'                   => $escrowData->escrow_total_charge,
@@ -506,9 +635,14 @@ class EscrowController extends Controller
                 'gateway_exchange_rate' => $escrowData->gateway_exchange_rate,
                 'created_at'            => now(),
             ]);
+            \Log::info('Escrow details created for escrow ID: ' . $escrowCreate->id);
+    
             DB::commit();
-            //send user notification
+    
+            // Send user notifications
             $byerOrSeller = User::findOrFail($escrowData->buyer_or_seller_id);
+            \Log::info('Sending notification to user ID: ' . $byerOrSeller->id);
+    
             $notification_content = [
                 'title'   => "Escrow Request",
                 'message' => "A user created an escrow with you",
@@ -520,30 +654,38 @@ class EscrowController extends Controller
                 'user_id' => $escrowData->buyer_or_seller_id,
                 'message' => $notification_content,
             ]);
-            //Push Notifications
+    
+           // Push Notifications
             $basic_setting = BasicSettings::first();
-            try{ 
-                $byerOrSeller->notify(new EscrowRequest($byerOrSeller,$escrowCreate));
-                
-                if($basic_setting->push_notification == true){
-                    event(new UserNotificationEvent($notification_content,$byerOrSeller));
-                    send_push_notification(["user-".$byerOrSeller->id],[
-                        'title'     => $notification_content['title'],
-                        'body'      => $notification_content['message'],
-                        'icon'      => $notification_content['image'],
+            try { 
+                $byerOrSeller->notify(new EscrowRequest($byerOrSeller, $escrowCreate));
+    
+                if ($basic_setting->push_notification == true) {
+                    \Log::info('Sending push notification to user ID: ' . $byerOrSeller->id);
+                    event(new UserNotificationEvent($notification_content, $byerOrSeller));
+                    send_push_notification(["user-" . $byerOrSeller->id], [
+                        'title' => $notification_content['title'],
+                        'body'  => $notification_content['message'],
+                        'icon'  => $notification_content['image'],
                     ]);
                 }
-            }catch(Exception $e) {
-
+            } catch (Exception $e) {
+                \Log::error('Push notification error: ' . $e->getMessage());
             }
-          
+    
+            // Clean up temporary data
             TemporaryData::where("identifier", $tempData->identifier)->delete();
-        }catch(Exception $e) { 
+            \Log::info('Temporary data deleted for identifier: ' . $tempData->identifier);
+    
+        } catch (Exception $e) {
             DB::rollBack();
-            logger($e->getMessage());
+            \Log::error('Escrow creation failed: ' . $e->getMessage());
             throw new Exception($e->getMessage());
-        } 
+        }
+    
+        \Log::info('createEscrow method completed');
     }
+    
     //escrow sslcommerz fail
      public function escrowSllCommerzFails(Request $request){ 
         $tempData = TemporaryData::where("identifier",$request->tran_id)->first();

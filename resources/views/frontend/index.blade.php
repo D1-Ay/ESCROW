@@ -59,7 +59,7 @@
                                     <div class="field-input">
                                         <div class="field-preffix">
                                             <div class="field-preffix-wrapper">
-                                                <span class="field-preffix-label currency-symbol">{{ __('for') }} $</span>
+                                                <span class="field-preffix-label currency-symbol">{{ __('for') }} </span>
                                             </div>
                                         </div>
                                         <input type="text" class="defaultInput" data-target="field-focusable" id="amount" value="1000" name="amount" step="10" min="0" data-component="calculator-price" aria-describedby=" error-price" data-e2e-target="calculator-price-input" autocomplete="off">
