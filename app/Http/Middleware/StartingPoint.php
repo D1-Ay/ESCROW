@@ -29,13 +29,13 @@ class StartingPoint
                 $script = DB::table('script')->first();
 
                 if($script && $filter_host != $script->client) {
-                    Config::set('starting-point.status',true);
-                    Config::set('starting-point.point','/project/install/welcome');
+                    // Config::set('starting-point.status',true);
+                    // Config::set('starting-point.point','/project/install/welcome');
                 }
             }
         }catch(Exception $e) {
-            Config::set('starting-point.status',true);
-            Config::set('starting-point.point','/project/install/welcome');
+            // Config::set('starting-point.status',true);
+            // Config::set('starting-point.point','/project/install/welcome');
         }
 
         if(Config::get('starting-point.status') === true) {
