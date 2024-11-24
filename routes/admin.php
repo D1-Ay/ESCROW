@@ -229,7 +229,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('config', 'configuration')->name('config');
         // Route::get('template/default', 'defaultTemplate')->name('template.default');
         Route::put('config/update', 'update')->name('config.update');
-        Route::post('test-mail/send','sendTestMail')->name('test.mail.send')->middleware('mail');
+        Route::post('test-mail/send','sendTestMail')->name('test.mail.send');
     });
 
 
