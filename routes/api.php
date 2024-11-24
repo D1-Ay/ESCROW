@@ -135,9 +135,9 @@ Route::prefix("v1")->name('api.v1.')->group(function(){
         // User Profile
         Route::controller(ProfileController::class)->prefix('profile')->group(function(){
             Route::get('/', 'profile');
-            Route::post('update', 'profileUpdate')->middleware('app.mode.api');
-            Route::post('password/update', 'passwordUpdate')->middleware('app.mode.api');
-            Route::post('delete/account', 'deleteAccount')->middleware('app.mode.api');
+            Route::post('update', 'profileUpdate');
+            Route::post('password/update', 'passwordUpdate');
+            Route::post('delete/account', 'deleteAccount');
             Route::get('/google-2fa', 'google2FA');
             Route::post('/google-2fa/status/update', 'google2FAStatusUpdate'); 
             Route::get('type/update','profileTypeUpdate')->name('type.update');

@@ -21,11 +21,11 @@ Route::prefix("user")->name("user.")->group(function(){
     Route::controller(DashboardController::class)->group(function(){
         Route::get('dashboard','index')->name('dashboard');
         Route::post('logout','logout')->name('logout');
-        Route::post('delete/account','deleteAccount')->name('delete.account')->middleware('app.mode');
+        Route::post('delete/account','deleteAccount')->name('delete.account');
         Route::post('notification/seen/update','userNotificationUpdate')->name('notifications.seen.update');
     });
     //user profile routes
-    Route::controller(ProfileController::class)->prefix("profile")->middleware('app.mode')->name("profile.")->group(function(){
+    Route::controller(ProfileController::class)->prefix("profile")->name("profile.")->group(function(){
         Route::get('/','index')->name('index');
         Route::put('password/update','passwordUpdate')->name('password.update');
         Route::put('update','update')->name('update');
@@ -186,7 +186,7 @@ Route::prefix("user")->name("user.")->group(function(){
     //google-2fa
     Route::controller(SecurityController::class)->prefix("security")->name('security.')->group(function(){
         Route::get('google/2fa','google2FA')->name('google.2fa');
-        Route::post('google/2fa/status/update','google2FAStatusUpdate')->name('google.2fa.status.update')->middleware('app.mode');
+        Route::post('google/2fa/status/update','google2FAStatusUpdate')->name('google.2fa.status.update');
     });
 
 });
