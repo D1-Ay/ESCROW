@@ -9,7 +9,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Notification;
-
+use Illuminate\Support\Facades\Log;
 class SetupEmailController extends Controller
 { 
     /**
@@ -105,17 +105,37 @@ class SetupEmailController extends Controller
 
 
     public function sendTestMail(Request $request) {
-        $validator = Validator::make($request->all(),[
-            'email'         => 'required|string|email',
+        // Start logging the request
+        Log::info('sendTestMail invoked', ['request_data' => $request->all()]);
+    
+        // Validate the email input
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|string|email',
         ]);
-
+    
+        if ($validator->fails()) {
+            Log::error('Validation failed', ['errors' => $validator->errors()]);
+            return back()->with(['error' => ['Invalid email address provided.']]);
+        }
+    
         $validated = $validator->validate();
-
-        try{
-            Notification::route('mail',$validated['email'])->notify(new SendTestMail());
-        }catch(Exception $e) {
+        Log::info('Validation successful', ['validated_data' => $validated]);
+    
+        // Attempt to send the email
+        try {
+            Notification::route('mail', $validated['email'])->notify(new SendTestMail());
+            Log::info('Email sent successfully', ['to' => $validated['email']]);
+        } catch (\Exception $e) {
+            // Log the specific error message
+            Log::error('Error sending email', [
+                'message' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
+            ]);
+    
             return back()->with(['error' => ['Something went wrong! Please try again.']]);
-        } 
-        return back()->with(['success' => ['Email send successfully!']]);
+        }
+    
+        // If everything works, return success
+        return back()->with(['success' => ['Email sent successfully!']]);
     }
 }
